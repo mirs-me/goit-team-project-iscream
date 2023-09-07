@@ -30,11 +30,10 @@ header {
 .header-bar {
   display: flex;
 }
-.logo svg {
+.logo img {
   display: block;
   width: 40px;
   height: 37px;
-  fill: var(--yellow);
 }
 
 .header-navigation {
@@ -65,7 +64,7 @@ header {
     max-width: 768px;
     padding: 0 32px;
   }
-  .logo svg {
+  .logo img {
     width: 48px;
     height: 44px;
   }
@@ -99,6 +98,10 @@ header {
   .container {
     max-width: 1200px;
     padding: 0 16px;
+  }
+  .logo img {
+    width: 60px;
+    height: 55px;
   }
   .header-navigation {
     display: flex;
