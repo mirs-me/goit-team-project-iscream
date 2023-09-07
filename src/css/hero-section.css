@@ -21,14 +21,19 @@
   background-color: var(--main-green);
   position: relative;
 }
+.hero .container {
+  background: url(../images/phone-left-balls@1x.png) 0 100%/100px 34px no-repeat,
+    url(../images/phone-right-balls@1x.png) 100% 100%/130 48px no-repeat;
+}
+
 .hero-content {
-  padding-top: 40px;
-  padding-bottom: 220px;
+  padding-top: 99px;
+  padding-bottom: 239px;
 }
 .hero-title {
   max-width: 250px;
   color: var(--text-white);
-  font-family: Seymour One;
+  font-family: Seymour One, sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +43,6 @@
 }
 .hero-title .hero-title-accent {
   color: var(--text-white);
-  font-family: Seymour One;
   font-size: 34px;
   font-style: normal;
   font-weight: 400;
@@ -51,6 +55,7 @@
   gap: 12px;
 }
 .btn-border {
+  color: var(--text);
   background-color: transparent;
   border: 2px solid var(--yellow);
   outline: 0;
@@ -60,6 +65,10 @@
   padding: 11px 26px;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .btn-underline {
   padding: 11px 9px;
@@ -67,16 +76,92 @@
   text-decoration: underline;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 12px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-.hero-image-container {
-  position: absolute;
-  bottom: 0;
-  min-width: 177px;
-  left: 50%;
-  transform: translateX(-50%);
+.hero-description {
+  display: none;
+}
+.stats {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .hero-image-container {
+    position: absolute;
+    bottom: 0;
+    min-width: 177px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero .container {
+    background: url(../images/tablet-left-balls@1x.png) 0 100%/110px 34px no-repeat,
+      url(../images/tablet-right-balls@1x.png) 100% 100%/182 67px no-repeat;
+    position: relative;
+  }
+  .hero-content {
+    padding-top: 80px;
+    padding-bottom: 12px;
+  }
+  .hero-description {
+    width: 152px;
+    height: 152px;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .hero-image-container {
+    position: absolute;
+    width: 268px;
+    bottom: 0;
+    right: 100px;
+  }
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 94px;
+    right: 0;
+  }
+  .stats-item {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: var(--text-white);
+  }
+  .stats-number {
+    color: var(--text);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 4px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.52px;
+    text-transform: uppercase;
+    max-width: 367px;
+  }
+  .hero-content {
+    padding-top: 118px;
+    padding-bottom: 65px;
+  }
+
   .btn-border:hover {
     border-color: var(--button-green);
   }
@@ -89,5 +174,50 @@
   }
   .btn-underline:focus {
     color: var(--text-white);
+  }
+  .hero-links {
+    display: flex;
+    margin-top: 28px;
+    gap: 12px;
+  }
+  .hero-description {
+    margin-top: 42px;
+    width: 225px;
+    height: 225px;
+  }
+  .hero .container {
+    background: url(../images/desktop-balls@2x.png) bottom/1200px 384px no-repeat;
+  }
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 94px;
+  }
+  .hero-image-container {
+    width: 447px;
+    right: 86px;
+  }
+  .stats-item {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: var(--text-white);
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .stats-number {
+    color: var(--text);
+    text-align: right;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    text-transform: uppercase;
   }
 }
