@@ -48,6 +48,7 @@ button {
   padding: 0;
   margin: 0;
 }
+
 .btn {
   color: var(--text);
   cursor: pointer;
@@ -57,6 +58,8 @@ button {
   font-weight: 600;
   /* display: block; niepotrzebne*/
 }
+
+
 
 ul,
 ol {
@@ -77,8 +80,8 @@ a {
 
 .section {
   margin-top: 60px;
-  margin-bottom: 60px;
-}
+  margin-bottom: 60p
+
 
 @media screen and (min-width: 768px) {
   .container {
@@ -86,7 +89,7 @@ a {
     padding: 0 32px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
     padding: 0 16px;
