@@ -1,8 +1,10 @@
-.gallery .container {
+.gallery {
   background: url(../images/background-desktop@2x.png) rgb(252, 252, 252) 50% / cover no-repeat;
+  width: 100%;
+}
+.gallery .container {
   width: 1195px;
   height: 1097px;
-  padding-top: 80px;
   padding-bottom: 140px;
 }
 
@@ -13,20 +15,13 @@
   padding-left: 93px;
 }
 
-.gallery_background {
-  width: 1195px;
-  height: 1097px;
-  display: inline-flex;
-  padding: 0px 80px 86px 52px;
-  align-items: center;
-}
-
 .gallery_animation {
   border-radius: 24px;
   width: 1013px;
   height: 422px;
   overflow: hidden; /* Ukryj elementy, które nie mieszczą się w obszarze galerii */
-  position: relative;
+  position: absolute;
+  margin-top: -138px;
 }
 
 .gallery_animation img {
