@@ -1,0 +1,196 @@
+.products-section{
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.products-box{
+    background-image: url(../images/background-desktop.png);
+    background-color: white;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.products-card{
+    padding: 32px 0px;
+}
+
+.product-name{
+font-family: Montserrat;
+font-size: 30px;
+font-weight: 700;
+line-height: 37px;
+letter-spacing: 0.04em;
+text-align: center;
+}
+
+.product-name-description{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    
+}
+
+.products-name-head-small{
+color: #131313;
+font-family: Montserrat;
+font-size: 30px;
+font-weight: 800;
+line-height: 37px;
+letter-spacing: 0.04em;
+text-align: center;
+margin-bottom: 12px;
+}
+
+.products-name-head-big{
+    font-family: Seymour One;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 303px;
+     
+}
+
+.products-list{
+    text-align: center;
+    align-items: center;
+    gap: 164px;
+    display: flex;
+}
+
+.products-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.products-item {
+    width: 100%;
+    min-height: 420px;
+    border-radius: 24px;
+    flex-direction: column;
+    align-items: center;
+    padding: 123px 40px 6px;
+    display: flex;
+    position: relative;
+}
+
+
+.products-item-green {
+    background-color: #aec6a5;
+}
+
+.products-item-yellow {
+    background-color: #efd478;
+}
+
+.products-item-green:before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(rgba(156,190,143,.7),rgba(156,190,143,.7)),none;
+    border-radius: 50%;
+    position: absolute;
+    top: -97px;
+    box-shadow: 0 5.34219px 20.0332px rgba(10,136,23,.25);
+}
+.products-item-green:after {
+    content: "";
+    width: 201px;
+    height: 200px;
+    background-image: url(../images/desktop-ice-cream@1x.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    align-content: center;
+    align-items: center;
+    display: inline-block;
+    position: absolute;
+    top: -108px;
+}
+
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+.products-item-yellow:before {
+    content: "";
+    width: 201px;
+    height: 200px;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(rgba(248,210,78,.7),rgba(248,210,78,.7)),none;
+    border-radius: 50%;
+    align-content: center;
+    position: absolute;
+    top: -97px;
+    box-shadow: 0 5.40397px 20.2649px rgba(153,114,23,.25);
+}
+
+.products-item-yellow:after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/desktop-ice-coffe@1x.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    align-content: center;
+    display: inline-block;
+    position: absolute;
+    top: -108px;
+}
+
+.products-item-brown {
+    background-color: #d6936d;
+}
+
+.products-item-brown:before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(rgba(213,117,63,.7),rgba(213,117,63,.7)),none;
+    border-radius: 50%;
+    align-content: center;
+    position: absolute;
+    top: -97px;
+    box-shadow: 0 5.41333px 20.3px rgba(0,0,0,.25);
+}
+
+.products-item-brown:after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/desktop-milkshake@1x.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    align-content: center;
+    align-items: center;
+    display: inline-block;
+    position: absolute;
+    top: -108px;
+}
+
+.products-link{
+    transform-origin: 0;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    margin-top: auto;
+    transition-property: transform;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
