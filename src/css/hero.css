@@ -1,22 +1,3 @@
-:root {
-  --text: #131313;
-  --main-green: #84a178;
-  --card-green: #aec6a5;
-  --ingredients-green: #9cbe8f;
-  --button-green: #0a8817;
-  --grey-dissabled: #ababab;
-  --yellow: #f8d24e;
-  --card-yellow: #efd478;
-  --brown: #d6936d;
-  --brown-underlay: #d5753fb2; /*70% transparency - product circle*/
-  --green-underlay: #9cbe8fb2; /*70% transparency - product circle*/
-  --yellow-underlay: #f8d24eb2; /*70% transparency - product circle*/
-  --text-white: #fcfcfc;
-  --stroke: #e1e1e1;
-  --white: #fff;
-  --black: #000;
-  --box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
-}
 .hero {
   background-color: var(--main-green);
   position: relative;
@@ -61,25 +42,24 @@
   outline: 0;
   border-radius: 8px;
   letter-spacing: normal;
-  font-size: 12px;
   padding: 11px 26px;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-underline {
   padding: 11px 9px;
   color: var(--yellow);
   text-decoration: underline;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 12px;
-  font-size: 12px;
+
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-description {
   display: none;
@@ -87,13 +67,26 @@
 .stats {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .hero-image-container {
     position: absolute;
     bottom: 0;
-    min-width: 177px;
+    width: 177px;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero .container {
+    background: url(../images/phone-left-balls@1x.png) 50% 100%/100px 34px no-repeat,
+      url(../images/phone-right-balls@1x.png) 105% 100%/130 48px no-repeat;
+    position: relative;
+  }
+  .hero-image-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 218px;
   }
 }
 
@@ -106,19 +99,46 @@
   .hero-content {
     padding-top: 80px;
     padding-bottom: 12px;
+    position: relative;
   }
   .hero-description {
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+    gap: 32px;
+  }
+  .hero-description img {
     width: 152px;
     height: 152px;
+  }
+  .hero-description .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+  .hero-description .hero-text {
+    max-width: 180px;
+    color: var(--text-white);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+  }
+  .hero-description .hero-link {
     display: block;
-    margin-top: 20px;
+  }
+  .hero-link svg {
+    width: 40px;
+    height: 16px;
+    fill: var(--text-white);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .hero-image-container {
     position: absolute;
     width: 268px;
     bottom: 0;
-    right: 100px;
+    right: 69px;
   }
   .stats {
     display: flex;
@@ -133,6 +153,10 @@
     flex-direction: column;
     text-align: right;
     color: var(--text-white);
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
   .stats-number {
     color: var(--text);
@@ -161,7 +185,9 @@
     padding-top: 118px;
     padding-bottom: 65px;
   }
-
+  .btn-border {
+    padding: 12px 34px;
+  }
   .btn-border:hover {
     border-color: var(--button-green);
   }
@@ -182,11 +208,26 @@
   }
   .hero-description {
     margin-top: 42px;
+    gap: 16px;
+  }
+  .hero-description .hero-text {
+    max-width: 215px;
+    color: var(--text-white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+  }
+  .hero-description .text-container {
+    gap: 24px;
+  }
+  .hero-description img {
     width: 225px;
     height: 225px;
   }
   .hero .container {
     background: url(../images/desktop-balls@2x.png) bottom/1200px 384px no-repeat;
+    position: relative;
   }
   .stats {
     display: flex;
