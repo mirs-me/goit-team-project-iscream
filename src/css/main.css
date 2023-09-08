@@ -1,8 +1,10 @@
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 @import './styles.css';
 @import './header.css';
-@import './hero-section.css';
+@import './hero.css';
 @import './about.css';
 @import './footer.css';
 @import './gallery.css';
 @import './products.css';
+@import './advantages.css';
+@import './mobile-menu.css';

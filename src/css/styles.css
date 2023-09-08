@@ -70,6 +70,11 @@ a {
   text-decoration: none;
 }
 
+svg {
+  display: block;
+  fill: currentColor;
+}
+
 .container {
   max-width: 480px;
   padding: 0 20px;
@@ -79,6 +84,15 @@ a {
 .section {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 @media screen and (min-width: 768px) {
