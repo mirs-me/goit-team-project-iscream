@@ -1,30 +1,31 @@
-<section id="gallery" class="gallery section">
-  <div class="container gallery_content">
-    <div class="gallery_animation">
-      <img
-        class="gallery_image"
-        src="./images/desktop-gallery@1x.jpg"
-        srcset="./images/desktop-gallery@1x.jpg"
-        alt="ice cream "
-        width="1013"
-        height="422"
-      />
-      <img
-        class="gallery_image"
-        src="./images/desktop-gallery1@1x.jpg"
-        srcset="./images/desktop-gallery1@1x.jpg"
-        alt="ice cream "
-        width="1013"
-        height="422"
-      />
-      <img
-        class="gallery_image"
-        src="./images/desktop-gallery2@1x.jpg"
-        srcset="./images/desktop-gallery2@1x.jpg"
-        alt="ice cream "
-        width="1013"
-        height="422"
-      />
-    </div>
+<section id="gallery" class="gallery">
+  <div class="container">
+    <h2 class="visually-hidden">Gallery</h2>
+    <ul class="gallery-list">
+      <li class="gallery-item">
+        <picture>
+          <source srcset="./images/mobile-gallery@1x.jpg" media="(max-width:320px)" />
+          <source srcset="./images/tablet-gallery@1x.jpg" media="(max-width:1199px)" />
+          <source srcset="./images/desktop-gallery@1x.jpg" media="(min-width:1200px)" />
+          <img src="./images/desktop-gallery@1x.jpg" />
+        </picture>
+      </li>
+      <li class="gallery-item">
+        <picture>
+          <source srcset="./images/mobile-gallery1@1x.jpg" media="(max-width:320px)" />
+          <source srcset="./images/tablet-gallery1@1x.jpg" media="(max-width:1199px)" />
+          <source srcset="./images/desktop-gallery1@1x.jpg" media="(min-width:1200px)" />
+          <img src="./images/desktop-gallery1@1x.jpg" />
+        </picture>
+      </li>
+      <li class="gallery-item">
+        <picture>
+          <source srcset="./images/mobile-gallery2@1x.jpg" media="(max-width:320px)" />
+          <source srcset="./images/tablet-gallery2@1x.jpg" media="(max-width:1199px)" />
+          <source srcset="./images/desktop-gallery2@1x.jpg" media="(min-width:1200px)" />
+          <img src="./images/desktop-gallery2@1x.jpg" />
+        </picture>
+      </li>
+    </ul>
   </div>
 </section>

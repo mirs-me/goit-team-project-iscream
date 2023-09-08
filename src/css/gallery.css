@@ -1,68 +1,49 @@
 .gallery {
   background: url(../images/background-desktop@2x.png) rgb(252, 252, 252) 50% / cover no-repeat;
   width: 100%;
+  height: 500px;
 }
-.gallery .container {
-  width: 1195px;
-  height: 1097px;
-  padding-bottom: 140px;
+
+.gallery-list {
+  position: relative;
+  overflow: hidden;
+  max-width: 1013px;
   margin: 0 auto;
 }
-
-.gallery_image {
-  border-radius: 24px;
-  width: 1013px;
-  height: 422px;
+.gallery-item {
+  animation-name: gallery;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-
-.gallery_animation {
-  border-radius: 24px;
-  width: 1013px;
-  height: 422px;
-  overflow: hidden; /* Ukryj elementy, które nie mieszczą się w obszarze galerii */
-  margin: 0 auto;
-}
-
-.gallery_animation img {
+.gallery-item:nth-child(n + 2) {
   position: absolute;
-  margin-top: -138px;
-  opacity: 0; /* Ukryj wszystkie zdjęcia */
-  transition: opacity 1s ease-in-out; /* Dodaj animację zmiany przezroczystości */
+  top: 0;
 }
-/* Animacja galerii - pokaż wszystkie zdjęcia */
-.gallery_animation .gallery_image {
-  opacity: 0;
-  animation: slide 6s infinite;
+.gallery-item:nth-of-type(1) {
+  animation-delay: 6s;
 }
-
-.gallery_animation img:nth-child(2) {
-  animation-delay: 6s; /* Opóźnij animację drugiego zdjęcia o 3 sekundy */
+.gallery-item:nth-of-type(2) {
+  animation-delay: 3s;
+}
+.gallery-item img {
+  border-radius: 10px;
 }
 
-.gallery_animation img:nth-child(3) {
-  animation-delay: 9s; /* Opóźnij animację trzeciego zdjęcia o 6 sekundy */
-}
-/* Animacja "slide" - zmiana zdjęć */
-@keyframes slide {
+@keyframes gallery {
   0% {
     opacity: 0;
   }
-  25% {
-    opacity: 0.5;
-  }
-  50% {
+  10% {
     opacity: 1;
   }
-  75% {
-    opacity: 0.5;
+  33% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
   }
   100% {
     opacity: 0;
   }
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1200px) {
 }
