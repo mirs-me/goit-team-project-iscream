@@ -52,11 +52,11 @@ button {
 .btn {
   color: var(--text);
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 10px; /*Nie każdy button jest taki! W jednej sekcji jest z border-radius: 8px , dlatego wcześniej tego nie dodałam (MS)*/
   outline: none;
   font-size: 14px;
   font-weight: 600;
-  /* display: block; niepotrzebne*/
+  /* display: block; niepotrzebne */ 
 }
 
 ul,
