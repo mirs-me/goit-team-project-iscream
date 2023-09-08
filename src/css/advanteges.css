@@ -1,6 +1,4 @@
-.advantages-h2-hidden {
-display: none;
-}
+
 .advanteges-values {
     color: var(--text-white);
     text-Align: center;
@@ -21,12 +19,43 @@ display: none;
     font-Style: normal;
     font-Weight: 400;
     line-Height: 170%; /* 20.4px */
+    letter-Spacing: 0.32px;
+    }
+    @media screen and (min-width: 768px) {
+        .advantages-paragraph {
+         width: 152px;
+         flex-Shrink: 0;
+         font-Size: 14px;           
+         line-Height: 174%; /* 24.36px */
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .advantages-paragraph {
+        width: 368px;       
+        font-Size: 16px;
+        line-Height: 176%; /* 28.16px */
+         }
     }
     .advantages-wrapper {
     flex-direction: column;
     align-items: center;
     row-gap: 28px;
     display: flex;
+    }
+    @media screen and (min-width: 768px) {
+        .advantages-wrapper {
+        flex-direction: row;
+        align-items: center;
+        row-gap: unset;
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .advantages-wrapper {
+            gap: 32px;
+        }
     }
 
    .advantages-cow {
@@ -39,9 +68,24 @@ display: none;
     justify-content: center;
     align-items: center;
   }
+  @media screen and (min-width: 768px) {
+    .advantages-cow {
+    margin-bottom: 32px;
+    }
+  }
   .advanteges {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    .advanteges {
+    width: 152px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .advanteges {
+    width: 368px;
+    }
   }
