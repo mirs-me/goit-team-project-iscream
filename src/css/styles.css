@@ -45,15 +45,6 @@ button {
   cursor: pointer;
   border: none;
 }
-.btn {
-  color: var(--text);
-  cursor: pointer;
-  border-radius: 10px;
-  outline: none;
-  font-size: 14px;
-  font-weight: 600;
-  display: block;
-}
 
 ul,
 ol {
@@ -76,7 +67,7 @@ a {
     padding: 0 32px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
     padding: 0 16px;
