@@ -20,7 +20,7 @@ header {
 }
 .header-buttons {
   display: flex;
-  gap: 32px;
+  gap: 28px;
   align-items: center;
   justify-content: center;
   margin-left: auto;

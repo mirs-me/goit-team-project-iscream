@@ -91,7 +91,11 @@
                     font-size: 16px;
                     letter-spacing: 0.32px;
                 }
-
+    .footer-socials-item {
+                    transition-property: color;
+                    transition-duration: 250ms;
+                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                }
     .footer-socials-item:focus,
         .footer-socials-item:hover {
             color: var(--text-white);
