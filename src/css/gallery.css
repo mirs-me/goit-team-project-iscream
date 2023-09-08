@@ -1,0 +1,75 @@
+.gallery .container {
+  background: url(../images/background-desktop@2x.png) rgb(252, 252, 252) 50% / cover no-repeat;
+  width: 1195px;
+  height: 1097px;
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+
+.gallery_image {
+  border-radius: 24px;
+  width: 1013px;
+  height: 422px;
+  padding-left: 93px;
+}
+
+.gallery_background {
+  width: 1195px;
+  height: 1097px;
+  display: inline-flex;
+  padding: 0px 80px 86px 52px;
+  align-items: center;
+}
+
+.gallery_animation {
+  border-radius: 24px;
+  width: 1013px;
+  height: 422px;
+  overflow: hidden; /* Ukryj elementy, które nie mieszczą się w obszarze galerii */
+  position: relative;
+}
+
+.gallery_animation img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0; /* Ukryj wszystkie zdjęcia */
+  transition: opacity 1s ease-in-out; /* Dodaj animację zmiany przezroczystości */
+}
+/* Animacja galerii - pokaż wszystkie zdjęcia */
+.gallery_animation .gallery_image {
+  opacity: 0;
+  animation: slide 6s infinite;
+}
+
+.gallery_animation img:nth-child(2) {
+  animation-delay: 6s; /* Opóźnij animację drugiego zdjęcia o 3 sekundy */
+}
+
+.gallery_animation img:nth-child(3) {
+  animation-delay: 9s; /* Opóźnij animację trzeciego zdjęcia o 6 sekundy */
+}
+/* Animacja "slide" - zmiana zdjęć */
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
