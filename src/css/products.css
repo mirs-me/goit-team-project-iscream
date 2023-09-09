@@ -17,6 +17,7 @@
     font-weight: 800;
     text-align: center;
     margin-bottom: 12px;
+    text-transform: uppercase;
 }
 
 .products-name-head-big {
@@ -60,8 +61,8 @@ margin-bottom: 40px;
 }
 
 .products-item {
-    max-width: 320px;
-    min-height: 420px;
+    width: 100%;
+    height: 428px;
     border-radius: 24px;
     flex-direction: column;
     align-items: center;
@@ -186,53 +187,135 @@ margin-bottom: 40px;
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .products-section {
-      width: 224px;
-      height: 428px;
-    }
-    .products-name-head-big {
-      font-size: 34px;
-      letter-spacing: 1.36px;
-    }
-    .products-name-head-small { 
-      font-size: 22px;
-    }
-    .product-name {
-      font-size: 22px;
-      letter-spacing: 0.88px;
-    }
-    .product-name-description {
-      margin-left: 26px;
-      margin-right: 26px;
-    }
+@media screen and (min-width: 768px) {
+
+
+  .products-name-head-small {
+    font-size: 22px;
+  }
+
+  .products-name-head-big {
+    font-size: 34px;
+    letter-spacing: 1.36px;
+    margin-bottom: 200px;
+
+  }
+
+  .products-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .product-name {
+    font-size: 22px;
+    letter-spacing: 0.88px;
+  }
+
+  .product-name-description {
+    width: 172px;
+  }
+
+  .products-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .products-item {
+    height: 428px;
+    padding: 108px 43px 0;
+  }
+
+  .products-link {
+    bottom: 12px;
+  }
   }
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
-.products-section {
-  width: 370px;
-  height: 536px;
-}
-.products-name-head-big {
-  font-size: 36px;
-  letter-spacing: 2.16px;
-}
-.products-name-head-small{
-  font-size: 30px;
-  letter-spacing: 1.2px;
-}
-.product-name {
-  font-size: 30px;
-  letter-spacing: 1.2px;
-}
-.product-name-description {
-  font-size: 16px;
-  letter-spacing: 0.64px;
-  margin-left: 64px;
-  margin-right: 64px;
-}
-.products-image {
+  
+  .products-name-head-small {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
+
+  .products-name-head-big {
+    font-size: 36px;
+    letter-spacing: 2.16px;
+    margin-bottom: 303px;
+  }
+
+.products-item-green:before {
   width: 302px;
   height: 302px;
+  top: -167px;
+  box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
 }
+
+.products-item-green:after {
+  width: 302px;
+  height: 302px;
+  top: -183px;
+}
+
+
+.products-item-yellow:before {
+  width: 302px;
+  height: 302px;
+  top: -167px;
+  box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+}
+
+.products-item-yellow:after {
+  width: 302px;
+  height: 302px;
+  top: -183px;
+}
+
+.products-item-brown:before {
+  width: 302px;
+  height: 302px;
+  top: -167px;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.products-item-brown:after {
+  width: 302px;
+  height: 302px;
+  top: -183px;
+}
+  .products-list {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+    align-items: center;
+  }
+
+  .product-name {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    margin-bottom: 66px;
+  }
+
+  .product-name-description {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    width: 100%;
+  }
+
+  .products-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .products-item {
+    height: 536px;
+    padding: 165px 64px;
+  }
+
+  .products-link {
+    bottom: 60px;
+  }
 }
