@@ -85,6 +85,9 @@
     }
   }
   @media screen and (min-width: 1200px) {
+        .advantages-cow {
+            margin-bottom: 16px;}
+            
     .advanteges {
     width: 368px;
     }
