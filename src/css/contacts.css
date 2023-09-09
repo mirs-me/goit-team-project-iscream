@@ -224,6 +224,9 @@
     font-size: 14px;
     letter-spacing: 0.56px;
   }
+  .contacts-place:hover {
+    text-decoration: underline;
+  }
   .contacts-place::after {
     width: 176px;
     top: 103px;
