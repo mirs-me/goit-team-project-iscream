@@ -313,7 +313,7 @@
 
   .products-item {
     height: 536px;
-    padding: 165px 64px;
+    padding: 165px 64px 0;
   }
 
   .products-link {
