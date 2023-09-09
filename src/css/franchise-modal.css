@@ -1,0 +1,155 @@
+.franchise-modal {
+    position: fixed;
+    inset: 0;
+    background-color: hsla(237, 18%, 22%, 0.4);
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    transition: opacity 250ms;
+}
+
+.franchise-modal-wrapper {
+    position: relative;
+    width: 224px;
+    height: 618px;
+    top: 80px;
+    margin: auto;
+    background-color: var(--text-white);
+    transition: scale 250ms;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    padding: 28px;
+}
+
+.franchise-modal-close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    inset: 12px 12px auto auto;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--text-white);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise-modal-title {
+    text-align: center;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-wrap: balance;
+}
+
+.franchise-modal-description{ 
+line-height: 1.4;
+margin-bottom: 24px;}
+
+.franchise-modal-order-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 12px;
+}
+
+.franchise-modal-input-wrapper input {
+    width: 224px;
+    padding-block: 8px;
+    padding-inline-start: 12px;
+    border-radius: 10px;
+    height: 32px;
+    border: 1px solid var(--main-green);
+    background: var(--form-yellow-underlay);
+}
+
+.franchise-modal-input-wrapper textarea {
+    width: 224px;
+    padding-block: 8px;
+    padding-inline-start: 12px;
+    border-radius: 10px;
+    height: 64px;
+    border: 1px solid var(--main-green);
+    background: var(--form-yellow-underlay);
+}
+
+.franchise-modal-input:placeholder-shown {
+    color: var(--yellow);
+}
+
+.franchise-modal-input::placeholder {
+    font-family: Montserrat, sans-serif;
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.franchise-modal-submit-button {
+    font-family: Montserrat, sans-serif;
+    margin-top: 24px;
+    width: 114px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .franchise-modal-wrapper {
+        width: 448px;
+        height: 604px;
+        padding: 32px 60px;
+    }
+
+    .franchise-modal-title {
+            font-size: 20px;
+            line-height: 1.4;
+            margin-bottom: 24px;
+            padding: 0 91px;
+        }
+
+    .franchise-modal-description {
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.franchise-modal-order-form {
+    gap: 16px;
+}
+
+.franchise-modal-input-wrapper input {
+    width: 368px;
+    padding-block: 11px;
+    padding-inline-start: 16px;
+    height: 42px;
+}
+
+.franchise-modal-input-wrapper textarea {
+    width: 368px;
+        padding-block: 11px;
+        padding-inline-start: 16px;
+        height: 84px;
+    }
+
+.franchise-modal-input::placeholder {
+    font-size: 14px;
+}
+
+.franchise-modal-submit-button {
+    margin-top: 16px;
+    width: 121px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+}
+}
