@@ -1,9 +1,3 @@
-.gallery {
-  background: url(../images/background-desktop@2x.png) rgb(252, 252, 252) 50% / cover no-repeat;
-  width: 100%;
-  height: 500px;
-}
-
 .gallery-list {
   position: relative;
   overflow: hidden;
