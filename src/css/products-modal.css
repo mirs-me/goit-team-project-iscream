@@ -1,115 +1,124 @@
 @import './styles.css';
 .product-modal {
-    position: fixed;
-    inset: 0;
-    background-color: hsla(237, 18%, 22%, 0.4);
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-    transition: opacity 250ms;
+  position: fixed;
+  inset: 0;
+  background-color: hsla(237, 18%, 22%, 0.4);
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  transition: opacity 250ms;
 }
 
 .product-modal-wrapper {
-    position: relative;
-    max-width: 568px;
-    min-height: 968px;
-    top: 80px;
-    margin: auto;
-    background-color: var(--text-white);
-    transition: scale 250ms;
-    border-radius: 10px;
-    border: 2px solid #F8D24E;
-    padding: 28px 20px;
+  position: relative;
+  max-width: 568px;
+  min-height: 968px;
+  top: 80px;
+  margin: auto;
+  background-color: var(--text-white);
+  transition: scale 250ms;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
+  padding: 28px 20px;
 }
 @media screen and (min-width: 768px) {
-    .product-modal-wrapper{ padding: 32px 40px;}
+  .product-modal-wrapper {
+    padding: 32px 40px;
+  }
 }
 
 .product-modal-close {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    inset: 12px 12px auto auto;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--text-white);
-    color: var(--text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  inset: 12px 12px auto auto;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--text-white);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-modal-title { 
-        text-align: center;
-        font-family: Seymour One;
-        font-size: 20px;
-        line-height: 1.4;
-        margin-bottom: 188px;
+.product-modal-title {
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 188px;
 }
-.product-modal-stats{ position: relative;
-                        margin-bottom: 40px;
-                       }
+.product-modal-stats {
+  position: relative;
+  margin-bottom: 40px;
+}
 .product-modal-stats:before {
-    content: "";
-    width: 132px;
-    height: 132px;
-    background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.70) 0%, rgba(156, 190, 143, 0.70) 100%), none;
-    border-radius: 50%;
-    position: absolute;
-    top: -161px;
-    box-shadow: 0px 5.2602739334106445px 19.72602653503418px rgba(10, 136, 23, 0.25);
+  content: '';
+  width: 132px;
+  height: 132px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7) 0%,
+      rgba(156, 190, 143, 0.7) 100%
+    ),
+    none;
+  border-radius: 50%;
+  position: absolute;
+  top: -161px;
+  box-shadow: 0px 5.2602739334106445px 19.72602653503418px rgba(10, 136, 23, 0.25);
 }
 .product-modal-stats::after {
-    content: "";
-    width: 132px;
-    height: 132px;
-    background-color: #d9d9d9;
-    background-image: url(../images/icecream-modal-two.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    top: -168px;
-
+  content: '';
+  width: 132px;
+  height: 132px;
+  background-color: #d9d9d9;
+  background-image: url(../images/icecream-modal-two.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -168px;
 }
-.product-modal-stats-list-2{ display: flex;
-                        justify-content: center;
-                        gap: 10px;
-                    
-                    }
-
-.product-modal-stats-list{  position: absolute;
-                            translate: 66.5%;
-                            display: flex;
-                            gap: 24px;
-                            justify-content: space-around;}
-
-
-.product-modal-stats-item {background-color: var(--ingredients-green);
-    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-    border-radius: 50%;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 28px;
-    width: 43px;
-    height: 43px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product-modal-stats-list-2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.product-modal-stats-item-name { 
-        font-size: 10px;
-        width: 53px;
-        height: 72px;
-        border-radius: 40px;
-        border: 2px solid #9CBE8F;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        padding-bottom: 8px;
+.product-modal-stats-list {
+  position: absolute;
+  translate: 66.5%;
+  display: flex;
+  gap: 24px;
+  justify-content: space-around;
+}
+
+.product-modal-stats-item {
+  background-color: var(--ingredients-green);
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 28px;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-modal-stats-item-name {
+  font-size: 10px;
+  width: 53px;
+  height: 72px;
+  border-radius: 40px;
+  border: 2px solid #9cbe8f;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 8px;
 }
