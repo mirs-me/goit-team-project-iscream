@@ -11,8 +11,8 @@
 
 .product-modal-wrapper {
     position: relative;
-    max-width: 568px;
-    min-height: 968px;
+    max-width: 488px;
+    min-height: 904px;
     top: 80px;
     margin: auto;
     background-color: var(--text-white);
@@ -44,7 +44,7 @@
 
 .product-modal-title { 
         text-align: center;
-        font-family: Seymour One;
+        font-family: 'Seymour One', sans-serif;
         font-size: 20px;
         line-height: 1.4;
         margin-bottom: 188px;
@@ -60,7 +60,11 @@
     border-radius: 50%;
     position: absolute;
     top: -161px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     box-shadow: 0px 5.2602739334106445px 19.72602653503418px rgba(10, 136, 23, 0.25);
+
 }
 .product-modal-stats::after {
     content: "";
@@ -71,8 +75,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    display: inline-block;
     position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     top: -168px;
 
 }
@@ -83,11 +89,21 @@
                     }
 
 .product-modal-stats-list{  position: absolute;
-                            translate: 66.5%;
+                            right: 0;
+                                left: 0;
+                                margin: 0 auto;
                             display: flex;
-                            gap: 24px;
-                            justify-content: space-around;}
+                            gap: 22px;
+                            justify-content: center;}
 
+@media screen and (min-width: 768px) {
+.product-modal-stats-list-2 {
+        gap: 20px;
+    }
+    .product-modal-stats-list {
+        gap: 33px;
+    }
+}
 
 .product-modal-stats-item {background-color: var(--ingredients-green);
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
@@ -113,3 +129,65 @@
         align-items: end;
         padding-bottom: 8px;
 }
+
+.product-modal-ingredients-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.product-modal-ingredients-block { display: flex;
+justify-content: space-between;
+line-height: 1.76;
+letter-spacing: 0.56px;
+margin-bottom: 48px;
+}
+
+.product-modal-ingredients-name{ margin-bottom: 11px;}
+
+.product-modal-ingredients-value{ text-align: right;
+                                    margin-bottom: 11px;}
+
+.product-modal-order-form{ display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            gap: 16px;
+                            line-height: 1.4px;
+                            }
+.product-modal-input-wrapper input{width: 368px;
+    padding-block: 11px;
+    padding-inline-start: 16px;
+    border-radius: 10px;
+    height: 42px;
+    border: 1px solid var(--main-green);
+    background: var(--form-yellow-underlay);
+}
+.product-modal-input-wrapper textarea {
+    width: 368px;
+    padding-block: 11px;
+    padding-inline-start: 16px;
+    border-radius: 10px;
+    height: 84px;
+    border: 1px solid var(--main-green);
+    background: var(--form-yellow-underlay);
+    }
+.product-modal-input:placeholder-shown { color: var(--yellow);}
+.product-modal-input::placeholder {
+    font-family: Montserrat, sans-serif;
+    color: var(--text);
+}
+
+.product-modal-submit-button{ font-family: Montserrat, sans-serif;
+                               margin-top: 16px;
+                               width: 121px;
+                               height: 42px;
+                               border-radius: 10px;
+                               background-color: var(--yellow);
+                               font-weight: 600;
+                               text-align: center;
+                               margin-bottom: 0; 
+                        }
