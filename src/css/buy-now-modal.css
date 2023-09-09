@@ -1,0 +1,184 @@
+:root {
+  --text: #131313;
+  --main-green: #84a178;
+  --card-green: #aec6a5;
+  --ingredients-green: #9cbe8f;
+  --button-green: #0a8817;
+  --grey-dissabled: #ababab;
+  --yellow: #f8d24e;
+  --card-yellow: #efd478;
+  --brown: #d6936d;
+  --brown-underlay: #d5753fb2; /*70% transparency - product circle*/
+  --green-underlay: #9cbe8fb2; /*70% transparency - product circle*/
+  --yellow-underlay: #f8d24eb2; /*70% transparency - product circle*/
+  --text-white: #fcfcfc;
+  --stroke: #e1e1e1;
+  --white: #fff;
+  --black: #000;
+  --box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 2000;
+  background-color: rgba(10, 10, 10, 0.5);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  padding: 20px;
+}
+.buy-now-modal {
+  width: 280px;
+  background-color: #fcfcfc;
+  border: 2px solid var(--yellow);
+  margin: 0 auto;
+  padding: 28px;
+  border-radius: 10px;
+  position: relative;
+}
+.buy-now-modal .close-modal-btn {
+  background-color: transparent;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.buy-now-modal .close-modal-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.buy-now-modal .modal-title {
+  color: #131313;
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 20px;
+}
+.buy-now-modal .modal-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.buy-now-modal .modal-item {
+  border: 2px solid #96af8c;
+  width: 132px;
+  height: 135px;
+  padding: 95px 0 20px;
+  margin-top: 59px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  position: relative;
+}
+.buy-now-modal .modal-item::before {
+  content: '';
+  position: absolute;
+  top: calc(-50% + 7px);
+  left: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.buy-now-modal .modal-item::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.buy-now-modal .item-green {
+  border: 2px solid var(--main-green);
+}
+.buy-now-modal .item-green::before {
+  background: linear-gradient(rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.buy-now-modal .item-green:after {
+  background-image: url(../images/icecream-modal-one.png);
+}
+.buy-now-modal .item-yellow {
+  border: 2px solid var(--yellow);
+}
+.buy-now-modal .item-yellow::before {
+  background: linear-gradient(rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  box-shadow: 0 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.buy-now-modal .item-yellow:after {
+  background-image: url(../images/ice-coffee-modal.png);
+}
+.buy-now-modal .item-brown {
+  border: 2px solid var(--brown);
+}
+.buy-now-modal .item-brown::before {
+  background: linear-gradient(rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  box-shadow: 0 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+.buy-now-modal .item-brown:after {
+  background-image: url(../images/milkshake-modal.png);
+}
+.buy-now-modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.buy-now-modal .input-container {
+  width: 100%;
+}
+.buy-now-modal .input-container input,
+.buy-now-modal .input-container textarea {
+  color: #131313;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a278;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+}
+.buy-now-modal .input-container input {
+  width: 100%;
+  height: 32px;
+}
+
+.buy-now-modal .input-container textarea {
+  width: 100%;
+  resize: none;
+  height: 65px;
+  margin-bottom: 26px;
+}
+.buy-now-modal .submit-button {
+  padding: 12px 34px;
+  border-radius: 10px;
+  background: #f8d24e;
+  color: #131313;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
