@@ -2,7 +2,6 @@
   position: relative;
   width: 280px;
   height: auto;
-
   margin: auto;
   background-color: var(--text-white);
   transition: scale 250ms;
@@ -33,45 +32,28 @@
   font-family: 'Seymour One', sans-serif;
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 181px;
+  margin-bottom: 20px;
 }
-.product-modal-stats {
+.product-modal-image {
+  width: 131px;
+  height: 131px;
+  background: linear-gradient(rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  display: block;
   position: relative;
-  margin-bottom: 40px;
 }
-.product-modal-stats::before {
+.product-modal-image::after {
   content: '';
-  width: 132px;
-  height: 132px;
-  background-image: linear-gradient(
-      0deg,
-      rgba(156, 190, 143, 0.7) 0%,
-      rgba(156, 190, 143, 0.7) 100%
-    ),
-    none;
+  width: 131px;
+  height: 131px;
+  background-image: url('../images/icecream-modal-two.png');
   border-radius: 50%;
   position: absolute;
-  top: -161px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  box-shadow: 0px 5.2602739334106445px 19.72602653503418px rgba(10, 136, 23, 0.25);
+  top: -7px;
+  box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
-.product-modal-stats::after {
-  content: '';
-  width: 132px;
-  height: 132px;
-  background-color: #d9d9d9;
-  background-image: url(../images/icecream-modal-two.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: -168px;
-}
+
 .product-modal-stats-list-2 {
   display: flex;
   justify-content: center;
@@ -79,9 +61,6 @@
 }
 
 .product-modal-stats-list {
-  position: absolute;
-  left: 1;
-  right: 1;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -89,6 +68,19 @@
 }
 
 .product-modal-stats-item {
+  font-size: 10px;
+  width: 53px;
+  height: 72px;
+  border-radius: 40px;
+  border: 2px solid #9cbe8f;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.product-modal-stats-item-value {
   background-color: var(--ingredients-green);
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   border-radius: 50%;
@@ -100,18 +92,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.product-modal-stats-item-name {
-  font-size: 10px;
-  width: 53px;
-  height: 72px;
-  border-radius: 40px;
-  border: 2px solid #9cbe8f;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  padding-bottom: 8px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .product-modal-ingredients-title {
@@ -120,6 +104,7 @@
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 24px;
+  margin-top: 20px;
 }
 
 .product-modal-ingredients-block {
@@ -197,7 +182,7 @@
   }
 
   .product-modal-title {
-    margin-bottom: 187px;
+    margin-bottom: 20px;
   }
 
   .product-modal-stats {
