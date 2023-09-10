@@ -120,7 +120,6 @@ svg {
   padding: 20px;
 }
 
-
 .gallery-customers-review-section {
   position: relative;
   background-color: var(--text-white);
@@ -130,18 +129,18 @@ svg {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 175px;
-}
+
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px;
   }
-    .gallery-customers-review-section {
-      position: relative;
-      height: 1017px;
-      padding-top: 223px;
-    }
+  .gallery-customers-review-section {
+    position: relative;
+    height: 1017px;
+    padding-top: 223px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -150,8 +149,8 @@ svg {
     padding: 0 16px;
   }
   .gallery-customers-review-section {
-              position: relative;
-              height: 1053px;
-              padding-top: 404px;
-            }
+    position: relative;
+    height: 1053px;
+    padding-top: 404px;
+  }
 }

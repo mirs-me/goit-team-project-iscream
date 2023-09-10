@@ -34,14 +34,25 @@
   line-height: 1.4;
   margin-bottom: 20px;
 }
-.product-modal-image {
+.product-modal-image,
+.product-modal-image-coffee,
+.product-modal-image-milkshakes {
   width: 131px;
   height: 131px;
-  background: linear-gradient(rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+
   border-radius: 50%;
   margin: 0 auto 25px;
   display: block;
   position: relative;
+}
+.product-modal-image {
+  background: linear-gradient(rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+}
+.product-modal-image-coffee {
+  background: linear-gradient(#efd478, #efd478), #d9d9d9;
+}
+.product-modal-image-milkshakes {
+  background: linear-gradient(#d6936d, #d6936d), #d9d9d9;
 }
 .product-modal-image::after {
   content: '';
@@ -53,7 +64,46 @@
   top: -7px;
   box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
-
+.product-modal-image::after {
+  content: '';
+  width: 131px;
+  height: 131px;
+  background-image: url('../images/icecream-modal-two.png');
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.product-modal-image::after {
+  content: '';
+  width: 131px;
+  height: 131px;
+  background-image: url('../images/icecream-modal-two.png');
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.product-modal-image-coffee:after {
+  content: '';
+  width: 131px;
+  height: 131px;
+  background-image: url('../images/ice-coffee-modal.png');
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.product-modal-image-milkshakes:after {
+  content: '';
+  width: 131px;
+  height: 131px;
+  background-image: url('../images/milkshake-modal.png');
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
 .product-modal-stats-list-2 {
   display: flex;
   justify-content: center;
