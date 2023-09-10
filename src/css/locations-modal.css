@@ -13,6 +13,10 @@
   top: 12px;
   right: 12px;
   background-color: var(--text-white);
+  transition: transform 500ms;
+}
+.location-close:hover {
+  transform: rotate(1turn);
 }
 .location-modal-header {
   position: absolute;

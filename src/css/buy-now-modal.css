@@ -32,6 +32,10 @@
   position: absolute;
   right: 12px;
   top: 12px;
+  transition: transform 500ms;
+}
+.close-modal-btn:hover {
+  transform: rotate(1turn);
 }
 .buy-now-modal .close-modal-btn svg {
   width: 20px;
