@@ -1,31 +1,17 @@
 
-.product-modal {
-  position: fixed;
-  inset: 0;
-  background-color: hsla(237, 18%, 22%, 0.4);
-  opacity: 1;
-  pointer-events: all;
-  visibility: visible;
-  transition: opacity 250ms;
-}
-
 .product-modal-wrapper {
     position: relative;
-    max-width: 488px;
-    min-height: 904px;
+    width: 280px;
+    height: auto;
     top: 80px;
     margin: auto;
-    background-color: var(--text-white);
+    background-color: var(--yellow);
     transition: scale 250ms;
     border-radius: 10px;
     border: 2px solid #F8D24E;
     padding: 28px 20px;
 }
-@media screen and (min-width: 768px) {
-  .product-modal-wrapper {
-    padding: 32px 40px;
-  }
-}
+
 
 .product-modal-close {
   position: absolute;
@@ -49,9 +35,10 @@
         font-family: 'Seymour One', sans-serif;
         font-size: 20px;
         line-height: 1.4;
-        margin-bottom: 188px;
+        margin-bottom: 181px;
 }
-.product-modal-stats:before {
+.product-modal-stats{ position: relative;}
+.product-modal-stats::before {
     content: "";
     width: 132px;
     height: 132px;
@@ -95,15 +82,7 @@
                             gap: 22px;
                             justify-content: center;}
 
-@media screen and (min-width: 768px) {
-.product-modal-stats-list-2 {
-        gap: 20px;
-    }
-    .product-modal-stats-list {
-        gap: 33px;
-    }
 
-}
 
 .product-modal-stats-item {
   background-color: var(--ingredients-green);
@@ -159,6 +138,62 @@ margin-bottom: 48px;
                             gap: 16px;
                             line-height: 1.4px;
                             }
+
+.product-modal-input-wrapper input {
+    width: 240px;
+    padding-block: 11px;
+    padding-inline-start: 11px;
+    border-radius: 10px;
+    height: 42px;
+    border: 1px solid var(--main-green);
+    background: var(--form-yellow-underlay);
+}
+
+.product-modal-input-wrapper textarea {
+    width: 240px;
+    padding-block: 11px;
+    padding-inline-start: 11px;
+    border-radius: 10px;
+    height: 84px;
+    border: 1px solid var(--main-green);
+    background: var(--form-yellow-underlay);
+}
+
+.product-modal-input:placeholder-shown {
+    color: var(--yellow);
+}
+
+.product-modal-input::placeholder {
+    font-family: Montserrat, sans-serif;
+    color: var(--text);
+}
+
+.product-modal-submit-button {
+    font-family: Montserrat, sans-serif;
+    margin-top: 14px;
+    width: 132px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .product-modal-wrapper {
+            width: 568px;
+            padding: 32px 40px;
+        }
+    .product-modal-stats-list-2 {
+        gap: 20px;
+    }
+
+    .product-modal-stats-list {
+        gap: 33px;
+    }
+
 .product-modal-input-wrapper input{width: 368px;
     padding-block: 11px;
     padding-inline-start: 16px;
@@ -192,3 +227,4 @@ margin-bottom: 48px;
                                text-align: center;
                                margin-bottom: 0; 
                         }
+}
