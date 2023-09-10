@@ -29,6 +29,7 @@
   padding-bottom: 24px;
   padding-left: 32px;
   flex-shrink: 0;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
 }
 .contacts-item:first-child {
   margin-top: -353px;
