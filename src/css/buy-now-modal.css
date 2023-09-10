@@ -149,7 +149,7 @@
   width: 100%;
   resize: none;
   height: 65px;
-  margin-bottom: 26px;
+  margin-bottom: 14px;
 }
 .buy-now-modal .submit-button {
   padding: 12px 34px;
@@ -162,6 +162,8 @@
   font-weight: 600;
   line-height: normal;
 }
+
+.buy-now-modal .input-container input::placeholder, .buy-now-modal .input-container textarea::placeholder {color: var(--text);}
 
 @media screen and (min-width: 768px) {
 .buy-now-modal {
