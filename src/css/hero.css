@@ -11,6 +11,36 @@
   padding-top: 99px;
   padding-bottom: 239px;
 }
+.hero-ic-image {
+  animation: icecream-rotate 0.5s ease-in-out 0.25s forwards, icecream-arise 0.5s ease-in-out 0.25s;
+  filter: drop-shadow(0 0 5px var(--text-white));
+  transition: filter 500ms;
+}
+@keyframes icecream-rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 2turn;
+  }
+}
+@keyframes icecream-arise {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.hero-ic-image:hover {
+  filter: drop-shadow(0 0 30px var(--text-white));
+}
+.hero-plate {
+  transition: transform 9s ease-in-out;
+}
+.hero-plate:hover {
+  transform: rotate(3turn);
+}
 .hero-title {
   max-width: 250px;
   color: var(--text-white);
