@@ -30,6 +30,9 @@
   padding-left: 32px;
   flex-shrink: 0;
 }
+.contacts-item:first-child {
+  margin-top: -353px;
+}
 .contacts-header {
   background-color: var(--yellow);
   border-radius: 4px;
@@ -194,7 +197,7 @@
     width: 704px;
     flex-direction: row;
     column-gap: 16px;
-    /* flex-basis: calc((100% - 16px) / 2); */
+    flex-basis: calc((100% - 16px) / 2);
     /* margin-top: -299px; */
     margin-inline: auto;
   }
@@ -204,6 +207,10 @@
     padding-block: 40px;
     padding-left: 24px;
     margin-inline: 0;
+    margin-top: -299px;
+  }
+  .contacts-item:first-child {
+    margin-top: -299px;
   }
   .contacts-header {
     font-size: 16px;
@@ -260,7 +267,7 @@
     flex-direction: row;
     gap: 16px;
     width: 408px;
-    margin-block: 40px;
+    margin-top: 40px;
     margin-inline: auto;
   }
 }
@@ -280,6 +287,10 @@
     padding-top: 44px;
     padding-bottom: 40px;
     padding-left: 40px;
+    margin-top: -128px;
+  }
+  .contacts-item:first-child {
+    margin-top: -128px;
   }
   .cafe {
     width: 76px;
@@ -327,5 +338,11 @@
   }
   .contacts-buttons {
     margin-block: 60px;
+  }
+  .location-button {
+    margin-bottom: 0;
+  }
+  .franchise-button {
+    margin-bottom: 0;
   }
 }
