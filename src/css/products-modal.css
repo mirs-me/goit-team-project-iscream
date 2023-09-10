@@ -1,18 +1,8 @@
 
-.product-modal {
-  position: fixed;
-  inset: 0;
-  background-color: hsla(237, 18%, 22%, 0.4);
-  opacity: 1;
-  pointer-events: all;
-  visibility: visible;
-  transition: opacity 250ms;
-}
-
 .product-modal-wrapper {
     position: relative;
-    max-width: 488px;
-    min-height: 904px;
+    width: 280px;
+    height: auto;
     top: 80px;
     margin: auto;
     background-color: var(--text-white);
@@ -21,11 +11,7 @@
     border: 2px solid #F8D24E;
     padding: 28px 20px;
 }
-@media screen and (min-width: 768px) {
-  .product-modal-wrapper {
-    padding: 32px 40px;
-  }
-}
+
 
 .product-modal-close {
   position: absolute;
@@ -49,9 +35,11 @@
         font-family: 'Seymour One', sans-serif;
         font-size: 20px;
         line-height: 1.4;
-        margin-bottom: 188px;
+        margin-bottom: 181px;
 }
-.product-modal-stats:before {
+.product-modal-stats{ position: relative;
+                        margin-bottom: 40px;}
+.product-modal-stats::before {
     content: "";
     width: 132px;
     height: 132px;
@@ -88,22 +76,15 @@
                     }
 
 .product-modal-stats-list{  position: absolute;
-                            right: 0;
-                                left: 0;
-                                margin: 0 auto;
+                            left: 1;
+                            right: 1;
+                            margin: 0 auto;
                             display: flex;
-                            gap: 22px;
-                            justify-content: center;}
+                            justify-content: center;
+                            gap: 18.5px;
+                            }
 
-@media screen and (min-width: 768px) {
-.product-modal-stats-list-2 {
-        gap: 20px;
-    }
-    .product-modal-stats-list {
-        gap: 33px;
-    }
 
-}
 
 .product-modal-stats-item {
   background-color: var(--ingredients-green);
@@ -143,7 +124,7 @@
 justify-content: space-between;
 line-height: 1.76;
 letter-spacing: 0.56px;
-margin-bottom: 48px;
+margin-bottom: 29px;
 }
 
 .product-modal-ingredients-name{ margin-bottom: 11px;}
@@ -159,36 +140,81 @@ margin-bottom: 48px;
                             gap: 16px;
                             line-height: 1.4px;
                             }
-.product-modal-input-wrapper input{width: 368px;
+
+.product-modal-input-wrapper input {
+    width: 240px;
     padding-block: 11px;
-    padding-inline-start: 16px;
+    padding-inline-start: 11px;
     border-radius: 10px;
     height: 42px;
     border: 1px solid var(--main-green);
     background: var(--form-yellow-underlay);
 }
+
 .product-modal-input-wrapper textarea {
-    width: 368px;
+    width: 240px;
     padding-block: 11px;
-    padding-inline-start: 16px;
+    padding-inline-start: 11px;
     border-radius: 10px;
     height: 84px;
     border: 1px solid var(--main-green);
     background: var(--form-yellow-underlay);
-    }
-.product-modal-input:placeholder-shown { color: var(--yellow);}
+}
+
+.product-modal-input:placeholder-shown {
+    color: var(--yellow);
+}
+
 .product-modal-input::placeholder {
     font-family: Montserrat, sans-serif;
     color: var(--text);
 }
 
-.product-modal-submit-button{ font-family: Montserrat, sans-serif;
-                               margin-top: 16px;
-                               width: 121px;
-                               height: 42px;
-                               border-radius: 10px;
-                               background-color: var(--yellow);
-                               font-weight: 600;
-                               text-align: center;
-                               margin-bottom: 0; 
-                        }
+.product-modal-submit-button {
+    font-family: Montserrat, sans-serif;
+    margin-top: 8px;
+    width: 132px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .product-modal-wrapper {
+            width: 568px;
+            padding: 32px 40px;
+        }
+
+    .product-modal-title {
+            margin-bottom: 187px;
+        }
+    
+    .product-modal-stats { margin-bottom: 48px;}
+
+    .product-modal-stats-list-2 {
+        gap: 20px;
+    }
+
+    .product-modal-stats-list {
+        gap: 30px;
+    }
+
+.product-modal-ingredients-block {margin-bottom: 37px;}
+
+.product-modal-input-wrapper input{width: 368px;
+    padding-inline-start: 16px;
+}
+.product-modal-input-wrapper textarea {
+    width: 368px;
+    padding-inline-start: 16px;
+    }
+
+    .product-modal-submit-button {
+            margin-top: 16px;
+            width: 121px;
+        }
+}

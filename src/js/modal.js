@@ -1,6 +1,6 @@
-const openModalBtn= document.querySelectorAll("[data-modal-open]");
+const openModalBtn=document.querySelectorAll("[data-modal-open]");
 const closeModalBtn=document.querySelectorAll("[data-modal-close]");
-const modal= document.querySelectorAll("[data-modal]");
+const modal=document.querySelectorAll("[data-modal]");
 let currentModal
 
 
