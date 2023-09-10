@@ -162,3 +162,50 @@
   font-weight: 600;
   line-height: normal;
 }
+
+@media screen and (min-width: 768px) {
+.buy-now-modal {
+    width: 568px;
+    height: auto;
+    padding: 32px 54px; 
+  }
+
+    .buy-now-modal .modal-title {
+      font-size: 20px;
+      line-height: 1.4;
+      margin-bottom: 40px;
+    }
+  
+    .buy-now-modal .modal-list {
+      flex-direction: row;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+  
+    .buy-now-modal form {
+      gap: 16px;
+    }
+  
+    .buy-now-modal .input-container {
+      width: 368px;
+    }
+  
+    .buy-now-modal .input-container input,
+    .buy-now-modal .input-container textarea {
+      padding: 11px 16px;
+    }
+  
+    .buy-now-modal .input-container input {
+      height: 42px;
+    }
+  
+    .buy-now-modal .input-container textarea {
+      height: 84px;
+      margin-bottom: 16px;
+    }
+  
+    .buy-now-modal .submit-button {
+      padding: 12px 34px;
+      font-size: 18px;
+    }
+}
