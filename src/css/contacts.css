@@ -33,6 +33,8 @@
 }
 .contacts-item:first-child {
   margin-top: -353px;
+  position: relative;
+  z-index: 0;
 }
 .contacts-header {
   background-color: var(--yellow);
