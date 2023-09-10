@@ -1,10 +1,13 @@
-const swiper = new Swiper('.customers-swiper', {
+const swiper = new Swiper('.swiper', {
+ 
   direction: 'horizontal',
-  loop: true,
+
+  slidesPerView: 1,
+  spaceBetween: 30,
+
   pagination: {
-    el: '.customers-swiper-pagination',
-  },
-  autoplay: {
-    delay: 5000,
-  },
+    el: '.swiper-pagination',
+    clickable: true,
+    
+  }
 });
