@@ -59,7 +59,7 @@
 }
 
 .products-item {
-    width: 100%;
+    width: 320px;
     height: 428px;
     border-radius: 24px;
     flex-direction: column;
