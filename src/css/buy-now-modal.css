@@ -124,6 +124,9 @@
 .buy-now-modal .item-brown:after {
   background-image: url(../images/milkshake-modal.png);
 }
+
+.buy-now-modal-product-title {pointer-events: none;}
+
 .buy-now-modal form {
   display: flex;
   flex-direction: column;
