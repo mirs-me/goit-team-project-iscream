@@ -92,7 +92,7 @@
   border-radius: 50%;
   position: absolute;
   top: -7px;
-  box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  box-shadow: 0 5.26027px 19.726px var(--yellow-underlay);
 }
 .product-modal-image-milkshakes:after {
   content: '';
@@ -102,7 +102,7 @@
   border-radius: 50%;
   position: absolute;
   top: -7px;
-  box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  box-shadow: 0 5.26027px 19.726px var(--brown-underlay);
 }
 .product-modal-stats-list-2 {
   display: flex;
