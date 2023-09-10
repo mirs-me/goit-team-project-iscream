@@ -80,10 +80,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 40px;
   height: 30px;
-  background-color: red; /*to jest chwilowe żeby ogarnąć klikanie modalu */
-
   margin-top: auto;
-  position: relative;
+  margin-bottom: 16px;
 }
 
 .products-item-green {
@@ -230,7 +228,7 @@
   }
 
   .products-link {
-    bottom: 12px;
+    margin-bottom: 12px;
   }
   }
 /* DESKTOP */
@@ -319,7 +317,7 @@
   }
 
   .products-link {
-    bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
