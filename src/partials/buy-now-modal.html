@@ -7,12 +7,20 @@
     </button>
 
     <h2 class="modal-title">Buy now</h2>
-    <ul class="modal-list">
-      <li class="modal-item item-green">Ice cream</li>
-      <li class="modal-item item-yellow">Ice coffee</li>
-      <li class="modal-item item-brown">Milkshake</li>
-    </ul>
+
     <form action="">
+      <ul class="modal-list">
+        <li class="modal-item item-green">
+          <input class="input-checkbox" type="checkbox" required />
+          <span>Ice cream</span>
+        </li>
+        <li class="modal-item item-yellow">
+          <input class="input-checkbox" type="checkbox" required /><span>Ice coffee</span>
+        </li>
+        <li class="modal-item item-brown">
+          <input class="input-checkbox" type="checkbox" required /><span>Milkshake</span>
+        </li>
+      </ul>
       <div class="input-container">
         <input type="text" name="name" placeholder="Name" minlength="2" required />
       </div>
@@ -20,7 +28,15 @@
         <input type="tel" name="phone" placeholder="Phone" minlength="9" required />
       </div>
       <div class="input-container">
-        <textarea name="comment" placeholder="Comment" id="" cols="30" rows="10"></textarea>
+        <textarea
+          name="comment"
+          placeholder="Comment"
+          id=""
+          cols="30"
+          rows="10"
+          minlength="5"
+          required
+        ></textarea>
       </div>
       <button class="submit-button" type="submit">Submit</button>
     </form>
