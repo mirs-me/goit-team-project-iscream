@@ -107,7 +107,6 @@ margin-bottom: 24px;}
 @media screen and (min-width: 768px) {
     .franchise-modal-wrapper {
         width: 572px;
-        height: auto;
         padding: 32px 60px;
     }
 
