@@ -70,8 +70,10 @@
   background: var(--form-yellow-underlay);
 }
 
-.franchise-modal-input:placeholder-shown {
-  color: var(--yellow);
+.franchise-modal-input-wrapper input:focus,
+.franchise-modal-input textarea:focus {
+  background-color: var(--card-yellow);
+  outline: var(--black);
 }
 
 .franchise-modal-input::placeholder {
@@ -141,4 +143,14 @@
     font-size: 14px;
     text-align: center;
   }
+}
+
+.franchise-modal-input-wrapper input:not(:placeholder-shown):required:valid,
+.franchise-modal-input-wrapper textarea:not(:placeholder-shown):required:valid {
+  border: 2px solid green
+}
+
+.franchise-modal-input-wrapper input:not(:placeholder-shown):required:invalid,
+.franchise-modal-input-wrapper textarea:not(:placeholder-shown):required:invalid {
+  border: 2px solid red;
 }

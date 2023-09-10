@@ -204,8 +204,9 @@
   background: var(--form-yellow-underlay);
 }
 
-.product-modal-input:placeholder-shown {
-  color: var(--yellow);
+.product-modal-input-wrapper input:focus, .product-modal-input textarea:focus {
+  background-color: var(--card-yellow);
+  outline: var(--black);
 }
 
 .product-modal-input::placeholder {
@@ -264,4 +265,14 @@
     margin-top: 16px;
     width: 121px;
   }
+}
+
+.product-modal-input-wrapper input:not(:placeholder-shown):required:valid,
+.product-modal-input-wrapper textarea:not(:placeholder-shown):required:valid {
+  border: 2px solid green;
+}
+
+.product-modal-input-wrapper input:not(:placeholder-shown):required:invalid,
+.product-modal-input-wrapper textarea:not(:placeholder-shown):required:invalid {
+  border: 2px solid red;
 }

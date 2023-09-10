@@ -153,11 +153,11 @@
 
 .buy-now-modal .input-container input:not(:placeholder-shown):required:valid,
 .buy-now-modal .input-container textarea:not(:placeholder-shown):required:valid {
-  border-color: green;
+  border: 2px solid green;
 }
 .buy-now-modal .input-container input:not(:placeholder-shown):required:invalid,
 .buy-now-modal .input-container textarea:not(:placeholder-shown):required:invalid {
-  border-color: red;
+  border: 2px solid red;
 }
 .input-checkbox {
   position: absolute;
