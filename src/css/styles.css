@@ -7,7 +7,7 @@
   --grey-disabled: #ababab;
   --yellow: #f8d24e;
   --card-yellow: #efd478;
-  --form-yellow-underlay: #F8D24E1A;
+  --form-yellow-underlay: #f8d24e1a;
   --brown: #d6936d;
   --brown-underlay: #d5753fb2; /*70% transparency - product circle*/
   --green-underlay: #9cbe8fb2; /*70% transparency - product circle*/
@@ -131,4 +131,13 @@ svg {
     max-width: 1200px;
     padding: 0 16px;
   }
+}
+.gallery-customers-review-section {
+  background-color: white;
+  width: 100%;
+  height: 800px;
+  background-image: url(../images/background-desktop.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
