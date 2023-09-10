@@ -1,17 +1,8 @@
-.franchise-modal {
-    position: fixed;
-    inset: 0;
-    background-color: hsla(237, 18%, 22%, 0.4);
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-    transition: opacity 250ms;
-}
 
 .franchise-modal-wrapper {
     position: relative;
-    width: 224px;
-    height: 618px;
+    width: 280px;
+    height: auto;
     top: 80px;
     margin: auto;
     background-color: var(--text-white);
@@ -44,7 +35,7 @@
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
-    text-wrap: balance;
+    width: 100%;
 }
 
 .franchise-modal-description{ 
@@ -93,7 +84,7 @@ margin-bottom: 24px;}
 
 .franchise-modal-submit-button {
     font-family: Montserrat, sans-serif;
-    margin-top: 24px;
+    margin-top: 12px;
     width: 114px;
     height: 42px;
     border-radius: 10px;
@@ -106,8 +97,7 @@ margin-bottom: 24px;}
 
 @media screen and (min-width: 768px) {
     .franchise-modal-wrapper {
-        width: 448px;
-        height: 604px;
+        width: 572px;
         padding: 32px 60px;
     }
 
@@ -115,7 +105,7 @@ margin-bottom: 24px;}
             font-size: 20px;
             line-height: 1.4;
             margin-bottom: 24px;
-            padding: 0 91px;
+            padding: 0 63px;
         }
 
     .franchise-modal-description {
@@ -139,6 +129,7 @@ margin-bottom: 24px;}
         padding-block: 11px;
         padding-inline-start: 16px;
         height: 84px;
+        display: block;
     }
 
 .franchise-modal-input::placeholder {
@@ -150,6 +141,5 @@ margin-bottom: 24px;}
     width: 121px;
     font-size: 14px;
     text-align: center;
-    margin-bottom: 0;
 }
 }
