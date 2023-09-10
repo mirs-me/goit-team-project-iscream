@@ -1,4 +1,4 @@
-.backdrop {
+/* .backdrop {
   position: fixed;
   inset: 0;
   background-color: hsla(237, 18%, 22%, 0.4);
@@ -6,7 +6,7 @@
   pointer-events: all;
   visibility: visible;
   transition: opacity 250ms;
-}
+} */
 .location-modal {
   position: relative;
   max-width: 568px;
