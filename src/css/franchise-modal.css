@@ -2,7 +2,6 @@
   position: relative;
   width: 280px;
   height: auto;
-
   margin: auto;
   background-color: var(--text-white);
   transition: scale 250ms;
