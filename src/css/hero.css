@@ -2,14 +2,40 @@
   background-color: var(--main-green);
   position: relative;
 }
-.hero .container {
-  background: url(../images/phone-left-balls@1x.png) 0 100%/100px 34px no-repeat,
-    url(../images/phone-right-balls@1x.png) 100% 100%/130 48px no-repeat;
-}
 
 .hero-content {
   padding-top: 99px;
   padding-bottom: 239px;
+}
+.hero-ic-image {
+  animation: icecream-rotate 0.5s ease-in-out 0.25s forwards, icecream-arise 0.5s ease-in-out 0.25s;
+  filter: drop-shadow(0 0 5px var(--text-white));
+  transition: filter 500ms;
+}
+@keyframes icecream-rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 2turn;
+  }
+}
+@keyframes icecream-arise {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.hero-ic-image:hover {
+  filter: drop-shadow(0 0 30px var(--text-white));
+}
+.hero-plate {
+  transition: transform 9s ease-in-out;
+}
+.hero-plate:hover {
+  transform: rotate(3turn);
 }
 .hero-title {
   max-width: 250px;
@@ -84,8 +110,13 @@
     position: absolute;
     bottom: 0;
     width: 177px;
-    left: 50%;
+    left: 160px;
     transform: translateX(-50%);
+  }
+  .hero .container {
+    background: url(../images/phone-left-balls@1x.png) 0 100%/100px 34px no-repeat,
+      url(../images/phone-right-balls@1x.png) 200px 100%/130 48px no-repeat;
+    position: relative;
   }
 }
 @media screen and (min-width: 480px) {
@@ -238,7 +269,7 @@
     height: 225px;
   }
   .hero .container {
-    background: url(../images/desktop-balls@2x.png) bottom/1200px 384px no-repeat;
+    background: url(../images/desktop-balls@1x.png) bottom/1200px 384px no-repeat;
     position: relative;
   }
   .stats {
@@ -275,6 +306,7 @@
   }
 }
 
+
 @media screen and (max-width: 479px),
   (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -291,6 +323,22 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
+/* @media (max-width: 479px) and
+(min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero .container {
+    background-image: url(../images/phone-left-balls@2x.png),
+      url(../images/phone-right-balls@2x.png);
+  }
+}
+
+@media (min-width: 480px), (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    main
   .hero .container {
     background: url(../images/phone-left-balls@2x.png) 50% 100%/100px 34px no-repeat,
       url(../images/phone-right-balls@2x.png) 105% 100%/130 48px no-repeat;
@@ -302,6 +350,12 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
+
+@media (min-width: 768px),
+(min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero .container {
     background: url(../images/tablet-left-balls@2x.png) 0 100%/110px 34px no-repeat,
       url(../images/tablet-right-balls@2x.png) 100% 100%/182 67px no-repeat;
@@ -317,3 +371,12 @@
     background: url(../images/desktop-balls@2x.png) bottom/1200px 384px no-repeat;
   }
 }
+@media (min-width: 1200px) and
+(min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero .container {
+    background-image: url(../images/desktop-balls@2x.png);
+  }
+}  

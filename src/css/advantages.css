@@ -1,5 +1,6 @@
 
-.advanteges-values {
+.advantages-values {
+
     color: var(--text-white);
     text-Align: center;
     font-Family:'Montserrat';
@@ -21,6 +22,7 @@
     line-Height: 170%; /* 20.4px */
     letter-Spacing: 0.32px;
     margin-bottom: 21px;
+
     }
     @media screen and (min-width: 768px) {
         .advantages-paragraph {
@@ -29,6 +31,7 @@
          font-Size: 14px;           
          line-Height: 174%; /* 24.36px */
          margin-bottom: 144px;
+
         }
     }
     @media screen and (min-width: 1200px) {
@@ -60,7 +63,7 @@
         }
     }
 
-   .advantages-cow {
+   .advantages-cow-background {
     width: 50px;
     height: 50px;
     flex-Shrink: 0;
@@ -70,27 +73,61 @@
     justify-content: center;
     align-items: center;
   }
-  @media screen and (min-width: 768px) {
-    .advantages-cow {
-    margin-bottom: 16px;
+  .advantages-cow::before {
+    content:url('/src/images/cow.png');
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+      }
+  .advantages-weight::before {
+   content:url('/src/images/weight.png');
+   display: inline-block;
+   width: 36px;
+   height: 36px;
+  }
+  .advantages-ice::before {
+   content:url('/src/images/ice-cream-icon.png');
+   display: inline-block;
+   width: 36px;
+   height: 36px;
+              }
+  @media screen and (min-width: 1200px) {
+    .advantages-cow  {
+    margin-bottom: 40px;
     }
   }
-  .advanteges {
+  .advantages {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
   }
   @media screen and (min-width: 768px) {
-    .advanteges {
+    .advantages {
     width: 152px;
+    margin-top: 40px;
     }
   }
   @media screen and (min-width: 1200px) {
-        .advantages-cow {
-            margin-bottom: 16px;}
-
-    .advanteges {
+    .advantages {
     width: 368px;
+    margin-top: 40px;
     }
   }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .advantages-cow::before {
+            content: url('/src/images/cow@2x.png') 25%/25%;
+          }
+        
+          .advantages-weight::before {
+            content: url('/src/images/weight@2x.png') 25%/25%;
+          }
+        
+          .advantages-ice::before {
+            content: url('/src/images/ice-cream@2x.png') 25%/25%;
+          }
+
+    }

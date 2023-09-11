@@ -104,7 +104,7 @@
   background-color: var(--grey-disabled);
 }
 
-@media screen and (width >= 768px) {
+@media screen and (min-width: 768px) {
   .about-section .about-section-title {
     font-size: 22px;
     font-weight: 800;
@@ -164,7 +164,7 @@
   }
 }
 
-@media screen and (width >= 1200px) {
+@media screen and (min-width: 1200px) {
   .about-section .about-section-title {
     font-size: 30px;
     letter-spacing: 1.2px;

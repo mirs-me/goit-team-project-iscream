@@ -264,3 +264,21 @@
     font-size: 18px;
   }
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.buy-now-modal .item-green:after {
+    background-image: url(../images/icecream-modal-one@2x.png) 25%/25%;
+  }
+
+  .buy-now-modal .item-yellow:after {
+    background-image: url(../images/ice-coffee-modal@2x.png) 25%/25%;
+  }
+
+  .buy-now-modal .item-brown:after {
+    background-image: url(../images/milkshake-modal@2x.png) 25%/25%;
+  }
+
+}
