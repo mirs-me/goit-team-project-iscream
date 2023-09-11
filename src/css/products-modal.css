@@ -229,10 +229,6 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 0;
-  transition: background-color 0.25s ease-in-out;
-}
-.product-modal-submit-button:hover {
-  background-color: var(--button-green);
 }
 
 @media screen and (min-width: 768px) {
@@ -284,6 +280,14 @@
 .product-modal-input-wrapper input:not(:placeholder-shown):required:invalid,
 .product-modal-input-wrapper textarea:not(:placeholder-shown):required:invalid {
   border: 2px solid red;
+}
+@media screen and (min-width: 1200) {
+  .product-modal-submit-button {
+    transition: background-color 0.25s ease-in-out;
+  }
+  .product-modal-submit-button:hover {
+    background-color: var(--button-green);
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
