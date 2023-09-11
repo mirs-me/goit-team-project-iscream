@@ -7,36 +7,7 @@
   padding-top: 99px;
   padding-bottom: 239px;
 }
-.hero-ic-image {
-  animation: icecream-rotate 0.5s ease-in-out 0.25s forwards, icecream-arise 0.5s ease-in-out 0.25s;
-  filter: drop-shadow(0 0 5px var(--text-white));
-  transition: filter 500ms;
-}
-@keyframes icecream-rotate {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 2turn;
-  }
-}
-@keyframes icecream-arise {
-  0% {
-    scale: 0;
-  }
-  100% {
-    scale: 1;
-  }
-}
-.hero-ic-image:hover {
-  filter: drop-shadow(0 0 30px var(--text-white));
-}
-.hero-plate {
-  transition: transform 9s ease-in-out;
-}
-.hero-plate:hover {
-  transform: rotate(3turn);
-}
+
 .hero-title {
   max-width: 250px;
   color: var(--text-white);
@@ -57,9 +28,7 @@
 .hero-arrow {
   transition: transform 0.5s easy-in-out;
 }
-.hero-arrow:hover {
-  transform: scale(1.3, 1);
-}
+
 .hero-title .hero-title-accent {
   color: var(--text-white);
   font-size: 34px;
@@ -86,7 +55,7 @@
   font-weight: 600;
   line-height: normal;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-underline {
   padding: 11px 9px;
@@ -304,6 +273,47 @@
     letter-spacing: 1.84px;
     text-transform: uppercase;
   }
+
+  /* animations */
+  .hero-arrow:hover {
+      transform: scale(1.3, 1);
+    }
+    .hero-ic-image {
+      animation: icecream-rotate 0.5s ease-in-out 0.25s forwards, icecream-arise 0.5s ease-in-out 0.25s;
+      filter: drop-shadow(0 0 5px var(--text-white));
+      transition: filter 500ms;
+    }
+  
+    @keyframes icecream-rotate {
+      0% {
+        rotate: 0deg;
+      }
+  
+      100% {
+        rotate: 2turn;
+      }
+    }
+  
+    @keyframes icecream-arise {
+      0% {
+        scale: 0;
+      }
+  
+      100% {
+        scale: 1;
+      }
+    }
+  
+    .hero-ic-image:hover {
+      filter: drop-shadow(0 0 30px var(--text-white));
+    }
+  
+    .hero-plate {
+      transition: transform 9s ease-in-out;
+    }
+  .hero-plate:hover {
+      transform: rotate(3turn);
+    }
 }
 
 
