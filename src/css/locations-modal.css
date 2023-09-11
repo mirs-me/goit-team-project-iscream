@@ -7,7 +7,15 @@
   border-radius: 10px;
   margin: auto;
   padding: 28px;
-  transition: scale 250ms;
+  transition: scale 250ms, opacity 250ms;
+}
+.is-hidden .location-modal {
+  scale: 2;
+  opacity: 0;
+}
+.backdrop:not(.is-hidden) .location-modal {
+  scale: 1;
+  opacity: 1;
 }
 .location-close {
   position: absolute;
