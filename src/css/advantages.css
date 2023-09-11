@@ -112,3 +112,20 @@
     width: 368px;
     }
   }
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .advantages-cow::before {
+            content: url('/src/images/cow@2x.png');
+          }
+        
+          .advantages-weight::before {
+            content: url('/src/images/weight@2x.png');
+          }
+        
+          .advantages-ice::before {
+            content: url('/src/images/ice-cream@2x.png');
+          }
+
+    }
