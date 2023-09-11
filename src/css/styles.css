@@ -21,6 +21,7 @@
   --transition-general-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-general: var(--transition-general-duration) var(--transition-general-function);
 }
+html{ scroll-behavior: smooth;}
 
 body {
   font-family: 'Montserrat', sans-serif;
