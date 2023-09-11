@@ -267,7 +267,7 @@
 }
 @media screen and (min-width: 1200) {
   .buy-now-modal > .submit-button {
-    transition: background-color 0.25s var(--transition-general-function, easy-in-out);
+    transition: background-color 0.25s var(--transition-general-function, ease-in-out);
   }
   .submit-button:hover {
     background-color: var(--button-green);
