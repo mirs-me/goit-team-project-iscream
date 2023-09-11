@@ -1,0 +1,2 @@
+const backToTop=document.querySelector(".go-to-top-button");function scrollFunction(){document.body.scrollTop>500||document.documentElement.scrollTop>500?backToTop.style.display="block":backToTop.style.display="none"}const topFunction=function(){document.body.scrollTop=0,document.documentElement.scrollTop=0};window.addEventListener("scroll",scrollFunction);
+//# sourceMappingURL=index.623112ae.js.map
