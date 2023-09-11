@@ -11,7 +11,7 @@
   transition: scale var(--transition-general), opacity var(--transition-general);
 }
 .is-hidden .franchise-modal-wrapper {
-  scale: 2;
+  scale: 0;
   opacity: 0;
 }
 .backdrop:not(.is-hidden) .franchise-modal-wrapper {

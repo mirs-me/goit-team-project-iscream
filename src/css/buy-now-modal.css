@@ -9,7 +9,7 @@
   transition: scale var(--transition-general), opacity var(--transition-general);
 }
 .is-hidden .buy-now-modal {
-  scale: 2;
+  scale: 0;
   opacity: 0;
 }
 .backdrop:not(.is-hidden) .buy-now-modal {
