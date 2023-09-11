@@ -1,60 +1,86 @@
-
 <div class="backdrop is-hidden" data-modal="products">
-<div class="product-modal-wrapper">
+  <div class="product-modal-wrapper">
     <button class="product-modal-close" data-modal-close>
-        <svg width="20" height="20">
-            <use href="./icons/icons.svg#icon-close"></use>
-        </svg>
+      <svg width="20" height="20">
+        <use href="./icons/icons.svg#icon-close"></use>
+      </svg>
     </button>
     <h2 class="product-modal-title">Chocolate icecream</h2>
     <div class="product-modal-image"></div>
     <ul class="product-modal-stats-list">
-        <li class="product-modal-stats-item">
-            <span class="product-modal-stats-item-value">320</span>kcal</li>
-        <li class="product-modal-stats-item">
-            <span class="product-modal-stats-item-value">4g</span>Protein</li>
-        <li class="product-modal-stats-item">
-            <span class="product-modal-stats-item-value">8,2g</span>Fats</li>
-        <li class="product-modal-stats-item">
-            <span class="product-modal-stats-item-value">40,4g</span>Carbs</li>
+      <li class="product-modal-stats-item">
+        <span class="product-modal-stats-item-value">320</span>kcal
+      </li>
+      <li class="product-modal-stats-item">
+        <span class="product-modal-stats-item-value">4g</span>Protein
+      </li>
+      <li class="product-modal-stats-item">
+        <span class="product-modal-stats-item-value">8,2g</span>Fats
+      </li>
+      <li class="product-modal-stats-item">
+        <span class="product-modal-stats-item-value">40,4g</span>Carbs
+      </li>
     </ul>
-   
-    
+
     <h3 class="product-modal-ingredients-title">Ingredients</h3>
     <div class="product-modal-ingredients-block">
-    <ul class="product-modal-ingredient-list">
+      <ul class="product-modal-ingredient-list">
         <li class="product-modal-ingredients-name">Milk</li>
         <li class="product-modal-ingredients-name">Belgian chocolate</li>
         <li class="product-modal-ingredients-name">Cream</li>
         <li class="product-modal-ingredients-name">Cocoa powder</li>
         <li class="product-modal-ingredients-name">Sugar</li>
         <li class="product-modal-ingredients-name">Vanilla sugar</li>
-    </ul>
-    <ul class="product-modal-ingredient-list">
+      </ul>
+      <ul class="product-modal-ingredient-list">
         <li class="product-modal-ingredients-value">100ml</li>
         <li class="product-modal-ingredients-value">20g</li>
         <li class="product-modal-ingredients-value">150ml</li>
         <li class="product-modal-ingredients-value">30g</li>
         <li class="product-modal-ingredients-value">40g</li>
         <li class="product-modal-ingredients-value">10g</li>
-    </ul>
+      </ul>
     </div>
     <div>
-        <form name="product-order-form" class="product-modal-order-form">
-            <label for="clientname-product" class="visually-hidden">Name</label>
-            <div class="product-modal-input-wrapper">
-                <input class="product-modal-input" type="text" minlength="2" name="clientname" id="clientname-product" placeholder="Name" required />
-            </div>
-            <label for="phonenumber-product" class="visually-hidden">Phone</label>
-            <div class="product-modal-input-wrapper">
-                <input class="product-modal-input" type="tel" pattern="[0-9]{9}" name="phonenumber" id="phonenumber-product" placeholder="Phone" required />
-            </div>
-            <label for="clientcomment-product" class="visually-hidden">Comment</label>
-            <div class="product-modal-input-wrapper">
-                <textarea class="product-modal-input" name="clientcomment" id="clientcomment-product" placeholder="Comment" cols="30" rows="5" wrap="hard"></textarea>
-            </div>
-            <button class="product-modal-submit-button" type="submit">Submit</button>
-        </form>
+      <form name="product-order-form" class="product-modal-order-form">
+        <label for="clientname-product" class="visually-hidden">Name</label>
+        <div class="product-modal-input-wrapper">
+          <input
+            class="product-modal-input"
+            type="text"
+            minlength="2"
+            name="clientname"
+            id="clientname-product"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <label for="phonenumber-product" class="visually-hidden">Phone</label>
+        <div class="product-modal-input-wrapper">
+          <input
+            class="product-modal-input"
+            type="tel"
+            pattern="[0-9]{9}"
+            name="phonenumber"
+            id="phonenumber-product"
+            placeholder="Phone"
+            required
+          />
+        </div>
+        <label for="clientcomment-product" class="visually-hidden">Comment</label>
+        <div class="product-modal-input-wrapper">
+          <textarea
+            class="product-modal-input"
+            name="clientcomment"
+            id="clientcomment-product"
+            placeholder="Comment"
+            cols="30"
+            rows="5"
+            wrap="hard"
+          ></textarea>
+        </div>
+        <button class="product-modal-submit-button" type="submit">Submit</button>
+      </form>
     </div>
-</div>
+  </div>
 </div>

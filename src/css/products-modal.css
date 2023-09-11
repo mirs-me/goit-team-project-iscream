@@ -23,12 +23,11 @@
   justify-content: center;
   align-items: center;
   transition: transform 500ms;
-  }
-  
-  .product-modal-close:hover {
-    transform: rotate(1turn);
-  }
+}
 
+.product-modal-close:hover {
+  transform: rotate(1turn);
+}
 
 .product-modal-title {
   text-align: center;
@@ -270,11 +269,11 @@
     margin-top: 16px;
     width: 121px;
     transition: background-color 0.25s ease-in-out;
-        }
-    
+  }
+
   .product-modal-submit-button:hover {
-          background-color: var(--button-green);
-        }
+    background-color: var(--button-green);
+  }
 }
 
 .product-modal-input-wrapper input:not(:placeholder-shown):required:valid,

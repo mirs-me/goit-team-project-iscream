@@ -73,8 +73,8 @@
     font-size: 14px;
   }
   .location-close:hover {
-      transform: rotate(1turn);
-    }
+    transform: rotate(1turn);
+  }
 }
 @media screen and (min-width: 1200) {
   .open-map {

@@ -1,3 +1,8 @@
+iframe {
+  border: 0;
+  outline: 0;
+}
+
 .read-more-wrapper {
   width: 280px;
   height: 459px;
@@ -29,7 +34,7 @@
   justify-content: center;
   align-items: center;
   transition: transform 500ms;
-    }
+}
 
 .read-more-title {
   margin-bottom: 20px;
@@ -83,6 +88,6 @@
     width: 448px;
   }
   .read-more-button:hover {
-      transform: rotate(1turn);
-    }
+    transform: rotate(1turn);
+  }
 }
