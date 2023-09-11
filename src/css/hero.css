@@ -21,14 +21,14 @@
 }
 .arrow-button {
   transform-origin: 0;
-  background-color: transparent;
-  border-color: transparent;
-  outline: none;
+   transition: transform 0.25s ease-in-out; 
+}
+.arrow-button:hover{
+  transform: scale(1.3, 1);
 }
 .hero-arrow {
-  transition: transform 0.5s easy-in-out;
+  pointer-events: none; ;
 }
-
 .hero-title .hero-title-accent {
   color: var(--text-white);
   font-size: 34px;
