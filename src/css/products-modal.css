@@ -277,19 +277,19 @@
   border: 2px solid red;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .product-modal-image::after {
-      background-image: url('../images/icecream-modal-two@2x.png');
+      background-image: url('../images/icecream-modal-two@2x.png') 25%/25% no-repeat;
     }
   
     .product-modal-image-coffee:after {
-      background-image: url('../images/ice-coffee-modal@2x.png');
+      background-image: url('../images/ice-coffee-modal@2x.png') 25%/25% no-repeat;
     }
   
     .product-modal-image-milkshakes:after {
-      background-image: url('../images/milkshake-modal@2x.png');
+      background-image: url('../images/milkshake-modal@2x.png') 25%/25% no-repeat;
     }
 }

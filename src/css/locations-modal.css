@@ -6,6 +6,7 @@
   border: 2px solid var(--yellow-underlay);
   border-radius: 10px;
   margin: auto;
+  padding: 28px;
   transition: scale 250ms;
 }
 .location-close {
@@ -19,68 +20,58 @@
   transform: rotate(1turn);
 }
 .location-modal-header {
-  position: absolute;
-  top: 28px;
-  left: 57px;
-  width: 166px;
   text-align: center;
   font-family: Seymour One;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5px;
+  margin-bottom: 20px;
 }
 .location-container {
-  position: absolute;
-  /* top: 60px; */
-  bottom: 94px;
-  left: 28px;
-  max-width: 224px;
+  width: 224px;
   height: 199px;
   border-radius: 10px;
 }
-img {
-  width: 100%;
-  height: 100%;
+.location-container img {
+  width: 224px;
+  height: 199px;
+  background-image: contain;
   border-radius: 10px;
 }
 .open-map {
-  position: absolute;
-  top: 295px;
-  left: 73px;
+  margin: 24px auto;
   width: 134px;
   height: 42px;
   background-color: var(--yellow);
   border-radius: 10px;
   text-align: center;
   font-size: 12px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
 }
 @media screen and (min-width: 768px) {
   .location-modal {
     width: 568px;
     height: 468px;
+    padding: 32px 60px;
   }
   .location-modal-header {
-    top: 32px;
-    left: 123px;
-    width: 322px;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
+    margin-bottom: 32px;
   }
   .location-container {
-    /* top: 60px; */
-    bottom: 106px;
-    left: 60px;
-    max-width: 448px;
+    width: 448px;
     height: 260px;
   }
+  .location-container img {
+      width: 448px;
+      height: 260px;
+    }
   .open-map {
-    position: absolute;
-    top: 384px;
-    left: 212px;
+    margin-top: 32px;
     width: 145px;
     height: 42px;
     font-size: 14px;
