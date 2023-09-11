@@ -146,16 +146,15 @@
     width: 121px;
     font-size: 14px;
     text-align: center;
-  }
-}
-@media screen and (min-width: 1200) {
-  .franchise-modal-submit-button {
-    transition: background-color 0.25s ease-in-out;
-  }
-  .franchise-modal-submit-button:hover,
-  .franchise-modal-submit-button:focus {
-    background-color: var(--button-green);
-  }
+    transition-property: background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: var(--transition-general-function), ease-in-out;
+        }
+    
+    .franchise-modal-submit-button:hover,
+    .franchise-modal-submit-button:focus {
+          background-color: var(--button-green);
+        }
 }
 
 .franchise-modal-input-wrapper input:not(:placeholder-shown):required:valid,
