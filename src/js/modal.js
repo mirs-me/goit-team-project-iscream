@@ -1,12 +1,13 @@
 const openModalBtn = document.querySelectorAll('[data-modal-open]');
 const closeModalBtn = document.querySelectorAll('[data-modal-close]');
-const modal = document.querySelectorAll('[data-modal]');
+const modalBackdrop = document.querySelectorAll('[data-modal-backdrop]');
 let currentModal;
 
 openModalBtn.forEach(btn => {
   btn.addEventListener('click', e => {
     const currentDataModal = e.target.dataset.modalOpen;
     currentModal = document.querySelector(`[data-modal=${currentDataModal}]`);
+    console.log(currentModal);
     toggleModal();
   });
 });
@@ -20,4 +21,10 @@ const toggleModal = function () {
 
 closeModalBtn.forEach(btn => {
   btn.addEventListener('click', toggleModal);
+});
+
+modalBackdrop.forEach(backdrop => {
+  backdrop.addEventListener('click', e =>
+    e.target.hasAttribute('data-modal-backdrop') ? toggleModal() : null,
+  );
 });
