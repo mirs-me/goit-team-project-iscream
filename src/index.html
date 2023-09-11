@@ -18,11 +18,6 @@
   <body>
     <include src="./partials/header.html"></include>
     <main>
-      <div>
-        <a href="#header" class="go-to-top-button">
-          <img src="./images/up-button.png" alt="ice-cream cone" class="go-to-button-image">
-        </a>
-      </div>
       <include src="./partials/hero.html"></include>
       <include src="./partials/products.html"></include>
       <include src="./partials/about.html"></include>
@@ -37,6 +32,12 @@
 
     <!-- Miejsce na modale -->
 
+    <div>
+      <button type="button" class="go-to-top-button" onclick="topFunction()">
+        <img src="./images/up-button.png" alt="ice-cream cone" class="go-to-button-image" />
+      </button>
+    </div>
+
     <include src="./partials/mobile-menu.html"></include>
     <include src="./partials/buy-now-modal.html"></include>
     <include src="./partials/products-modal.html"></include>
@@ -44,5 +45,6 @@
     <include src="./partials/our-location-modal.html"></include>
     <include src="./partials/read-more-modal.html"></include>
     <script src="./index.js" type="module"></script>
+    <script src="./js/back-to-top.js"></script>
   </body>
 </html>

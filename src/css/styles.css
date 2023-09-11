@@ -21,7 +21,9 @@
   --transition-general-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-general: var(--transition-general-duration) var(--transition-general-function);
 }
-html{ scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -136,10 +138,12 @@ svg {
 
 .go-to-top-button {
   position: fixed;
+  display: none;
   inset: auto 5px 5px auto;
   z-index: 10;
   width: 75px;
   filter: drop-shadow(5px 4px 3px #1a1a1aaa);
+  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -153,8 +157,10 @@ svg {
     background-size: cover;
     padding-top: 175px;
   }
-  .go-to-top-button{ width: 100px;
-  filter: drop-shadow(7px 6px 5px #1a1a1aaa);}
+  .go-to-top-button {
+    width: 100px;
+    filter: drop-shadow(7px 6px 5px #1a1a1aaa);
+  }
 }
 @media screen and (min-width: 1200px) {
   .gallery-customers-review-section {
