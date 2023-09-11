@@ -153,9 +153,6 @@
 .products-arrow:hover {
   transform: scale(1.3, 1);
 }
-.products-arrow {
-  pointer-events: none;
-}
 
 .products-item-green {
   background-color: #aec6a5;

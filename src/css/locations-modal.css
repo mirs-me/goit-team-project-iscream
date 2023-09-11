@@ -16,29 +16,23 @@
   background-color: var(--text-white);
   transition: transform 500ms;
 }
-.location-close:hover {
-  transform: rotate(1turn);
-}
+
 .location-modal-header {
   text-align: center;
   font-family: Seymour One;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
 .location-container {
   width: 224px;
   height: 199px;
   border-radius: 10px;
+  display: block;
 }
-.location-container img {
-  width: 224px;
-  height: 199px;
-  background-image: contain;
-  border-radius: 10px;
-}
+
 .open-map {
-  margin: 24px auto;
+  margin: 24px auto 0;
   width: 134px;
   height: 42px;
   background-color: var(--yellow);
@@ -71,16 +65,16 @@
     width: 448px;
     height: 260px;
   }
-  .location-container img {
-    width: 448px;
-    height: 260px;
-  }
+
   .open-map {
     margin-top: 32px;
     width: 145px;
     height: 42px;
     font-size: 14px;
   }
+  .location-close:hover {
+      transform: rotate(1turn);
+    }
 }
 @media screen and (min-width: 1200) {
   .open-map {

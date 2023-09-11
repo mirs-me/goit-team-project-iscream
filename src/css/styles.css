@@ -52,6 +52,7 @@ button {
   padding: 0;
   margin: 0;
 }
+textarea{ resize: none;}
 
 .btn {
   color: var(--text);
