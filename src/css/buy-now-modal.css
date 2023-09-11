@@ -269,7 +269,7 @@
   .buy-now-modal > .submit-button {
     transition: background-color 0.25s var(--transition-general-function, easy-in-out);
   }
-  .submit-button:hover {
+  .buy-now-modal > .submit-button:hover {
     background-color: var(--button-green);
   }
 }
