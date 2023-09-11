@@ -31,10 +31,6 @@
   transition: transform 500ms;
     }
     
-.read-more-button:hover {
-      transform: rotate(1turn);
-    }
-
 .read-more-title {
   margin-bottom: 20px;
   color: var(--text);
@@ -86,4 +82,7 @@
     font-size: 16px;
     width: 448px;
   }
+  .read-more-button:hover {
+      transform: rotate(1turn);
+    }
 }

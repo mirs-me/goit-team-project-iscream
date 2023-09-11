@@ -16,9 +16,7 @@
   background-color: var(--text-white);
   transition: transform 500ms;
 }
-.location-close:hover {
-  transform: rotate(1turn);
-}
+
 .location-modal-header {
   text-align: center;
   font-family: Seymour One;
@@ -69,4 +67,7 @@
     height: 42px;
     font-size: 14px;
   }
+  .location-close:hover {
+      transform: rotate(1turn);
+    }
 }
