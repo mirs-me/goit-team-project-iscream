@@ -98,6 +98,11 @@
   font-size: 12px;
   text-align: center;
   margin-bottom: 0;
+  transition: background-color 0.25s ease-in-out;
+}
+.franchise-modal-submit-button:hover,
+.franchise-modal-submit-button:focus {
+  background-color: var(--button-green);
 }
 
 @media screen and (min-width: 768px) {
@@ -151,7 +156,7 @@
 
 .franchise-modal-input-wrapper input:not(:placeholder-shown):required:valid,
 .franchise-modal-input-wrapper textarea:not(:placeholder-shown):required:valid {
-  border: 2px solid green
+  border: 2px solid green;
 }
 
 .franchise-modal-input-wrapper input:not(:placeholder-shown):required:invalid,
