@@ -307,22 +307,6 @@
 }
 
 
-@media screen and (max-width: 479px),
-  (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero .container {
-    background: url(../images/phone-left-balls@2x.png) 0 100%/100px 34px no-repeat,
-      url(../images/phone-right-balls@2x.png) 200px 100%/130 48px no-repeat;
-  }
-}
-
-@media screen and (min-width: 480px),
-  (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
 /* @media (max-width: 479px) and
 (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
