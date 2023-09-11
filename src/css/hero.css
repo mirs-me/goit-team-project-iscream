@@ -2,10 +2,6 @@
   background-color: var(--main-green);
   position: relative;
 }
-.hero .container {
-  background: url(../images/phone-left-balls@1x.png) 0 100%/100px 34px no-repeat,
-    url(../images/phone-right-balls@1x.png) 100% 100%/130 48px no-repeat;
-}
 
 .hero-content {
   padding-top: 99px;
@@ -118,8 +114,13 @@
     position: absolute;
     bottom: 0;
     width: 177px;
-    left: 50%;
+    left: 160px;
     transform: translateX(-50%);
+  }
+  .hero .container {
+    background: url(../images/phone-left-balls@1x.png) 0 100%/100px 34px no-repeat,
+      url(../images/phone-right-balls@1x.png) 200px 100%/130 48px no-repeat;
+    position: relative;
   }
 }
 @media screen and (min-width: 480px) {
