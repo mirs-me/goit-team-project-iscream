@@ -10,9 +10,9 @@
   margin: auto;
 }
 @media screen and (min-width: 768px) {
-  .read-modal-wrapper {
+  .read-more-wrapper {
     width: 568px;
-    height: 229px;
+    height: 449px;
     padding: 32px 60px;
   }
 }
@@ -74,12 +74,13 @@
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
+  width: 224px;
 }
 @media screen and (min-width: 768px) {
   .read-more-text {
     margin-bottom: 32px;
     font-size: 16px;
-    font-weight: 400;
+    width: 448px;
   }
 }
