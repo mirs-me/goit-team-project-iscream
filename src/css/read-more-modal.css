@@ -13,6 +13,15 @@ iframe {
   transition: scale 250ms;
   padding: 28px;
   margin: auto;
+  transition: scale var(--transition-general), opacity var(--transition-general);
+}
+.is-hidden .read-more-wrapper {
+  scale: 2;
+  opacity: 0;
+}
+.backdrop:not(.is-hidden) .read-more-wrapper {
+  scale: 1;
+  opacity: 1;
 }
 @media screen and (min-width: 768px) {
   .read-more-wrapper {

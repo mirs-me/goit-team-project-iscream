@@ -8,8 +8,16 @@
   border-radius: 10px;
   border: 2px solid #f8d24e;
   padding: 28px;
+  transition: scale var(--transition-general), opacity var(--transition-general);
 }
-
+.is-hidden .franchise-modal-wrapper {
+  scale: 2;
+  opacity: 0;
+}
+.backdrop:not(.is-hidden) .franchise-modal-wrapper {
+  scale: 1;
+  opacity: 1;
+}
 .franchise-modal-close {
   position: absolute;
   width: 20px;

@@ -6,6 +6,15 @@
   padding: 28px;
   border-radius: 10px;
   position: relative;
+  transition: scale var(--transition-general), opacity var(--transition-general);
+}
+.is-hidden .buy-now-modal {
+  scale: 2;
+  opacity: 0;
+}
+.backdrop:not(.is-hidden) .buy-now-modal {
+  scale: 1;
+  opacity: 1;
 }
 .buy-now-modal .close-modal-btn {
   background-color: transparent;
