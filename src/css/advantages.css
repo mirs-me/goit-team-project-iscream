@@ -105,10 +105,12 @@
   @media screen and (min-width: 768px) {
     .advantages {
     width: 152px;
+    margin-top: 40px;
     }
   }
   @media screen and (min-width: 1200px) {
     .advantages {
     width: 368px;
+    margin-top: 40px;
     }
   }
