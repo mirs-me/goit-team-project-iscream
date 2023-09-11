@@ -1,6 +1,6 @@
 const openModalBtn = document.querySelectorAll('[data-modal-open]');
 const closeModalBtn = document.querySelectorAll('[data-modal-close]');
-const modal = document.querySelectorAll('[data-modal]');
+const modalBackdrop = document.querySelectorAll('[modal-backdrop]');
 let currentModal;
 
 openModalBtn.forEach(btn => {
@@ -20,4 +20,8 @@ const toggleModal = function () {
 
 closeModalBtn.forEach(btn => {
   btn.addEventListener('click', toggleModal);
+});
+
+modalBackdrop.forEach(backdrop => {
+  backdrop.addEventListener('click', toggleModal);
 });
