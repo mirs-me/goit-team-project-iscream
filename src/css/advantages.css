@@ -1,5 +1,5 @@
 
-.advanteges-values {
+.advantages-values {
     color: var(--text-white);
     text-Align: center;
     font-Family:'Montserrat';
@@ -91,19 +91,19 @@
     margin-bottom: 40px;
     }
   }
-  .advanteges {
+  .advantages {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
   }
   @media screen and (min-width: 768px) {
-    .advanteges {
+    .advantages {
     width: 152px;
     }
   }
   @media screen and (min-width: 1200px) {
-    .advanteges {
+    .advantages {
     width: 368px;
     }
   }
