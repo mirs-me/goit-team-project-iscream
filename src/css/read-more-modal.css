@@ -28,14 +28,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.5s ease-in-out;
-}
-.read-more-button:hover {
-  transform: rotate(1turn);
-}
+  transition: transform 500ms;
+    }
+
 .read-more-title {
   margin-bottom: 20px;
   color: var(--text);
@@ -87,4 +82,7 @@
     font-size: 16px;
     width: 448px;
   }
+  .read-more-button:hover {
+      transform: rotate(1turn);
+    }
 }
