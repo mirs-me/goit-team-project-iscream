@@ -50,13 +50,9 @@
 }
 .arrow-button {
   transform-origin: 0;
-  transition: transform 0.5s easy-in-out;
   background-color: transparent;
   border-color: transparent;
   outline: none;
-}
-.arrow-button:focus {
-  transform: scale(1.3);
 }
 .hero-arrow {
   transition: transform 0.5s easy-in-out;
