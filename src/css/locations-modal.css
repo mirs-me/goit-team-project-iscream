@@ -76,3 +76,12 @@
       transform: rotate(1turn);
     }
 }
+@media screen and (min-width: 1200) {
+  .open-map {
+    transition: background-color 0.25s ease-in-out;
+  }
+  .open-map:hover,
+  .open-map:focus {
+    background-color: var(--button-green);
+  }
+}
