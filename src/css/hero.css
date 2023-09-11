@@ -21,13 +21,13 @@
 }
 .arrow-button {
   transform-origin: 0;
-   transition: transform 0.25s ease-in-out; 
+  transition: transform 0.25s ease-in-out;
 }
-.arrow-button:hover{
+.arrow-button:hover {
   transform: scale(1.3, 1);
 }
 .hero-arrow {
-  pointer-events: none; ;
+  pointer-events: none;
 }
 .hero-title .hero-title-accent {
   color: var(--text-white);
@@ -55,7 +55,7 @@
   font-weight: 600;
   line-height: normal;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-  border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-underline {
   padding: 11px 9px;
@@ -87,7 +87,9 @@
       url(../images/phone-right-balls@1x.png) 200px 100%/130 48px no-repeat;
     position: relative;
   }
-  .hero-ic-image { width: 177px;}
+  .hero-ic-image {
+    width: 177px;
+  }
 }
 @media screen and (min-width: 480px) {
   .hero .container {
@@ -101,7 +103,9 @@
     right: 0;
     min-width: 218px;
   }
-  .hero-ic-image{ width: 218px;}
+  .hero-ic-image {
+    width: 218px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -115,7 +119,9 @@
     padding-bottom: 12px;
     position: relative;
   }
-  .hero-ic-image { width: 268px;}
+  .hero-ic-image {
+    width: 268px;
+  }
   .hero-description {
     display: flex;
     margin-top: 12px;
@@ -201,7 +207,9 @@
     padding-bottom: 65px;
   }
 
-  .hero-ic-image{ width: 447px;}
+  .hero-ic-image {
+    width: 447px;
+  }
 
   .btn-border {
     padding: 12px 34px;
@@ -282,101 +290,43 @@
 
   /* animations */
   .hero-arrow:hover {
-      transform: scale(1.3, 1);
+    transform: scale(1.3, 1);
+  }
+  .hero-ic-image {
+    animation: icecream-rotate 0.5s ease-in-out 0.25s forwards,
+      icecream-arise 0.5s ease-in-out 0.25s;
+    filter: drop-shadow(0 0 5px var(--text-white));
+    transition: filter 500ms;
+  }
+
+  @keyframes icecream-rotate {
+    0% {
+      rotate: 0deg;
     }
-    .hero-ic-image {
-      animation: icecream-rotate 0.5s ease-in-out 0.25s forwards, icecream-arise 0.5s ease-in-out 0.25s;
-      filter: drop-shadow(0 0 5px var(--text-white));
-      transition: filter 500ms;
+
+    100% {
+      rotate: 2turn;
     }
-  
-    @keyframes icecream-rotate {
-      0% {
-        rotate: 0deg;
-      }
-  
-      100% {
-        rotate: 2turn;
-      }
+  }
+
+  @keyframes icecream-arise {
+    0% {
+      scale: 0;
     }
-  
-    @keyframes icecream-arise {
-      0% {
-        scale: 0;
-      }
-  
-      100% {
-        scale: 1;
-      }
+
+    100% {
+      scale: 1;
     }
-  
-    .hero-ic-image:hover {
-      filter: drop-shadow(0 0 30px var(--text-white));
-    }
-  
-    .hero-plate {
-      transition: transform 9s ease-in-out;
-    }
+  }
+
+  .hero-ic-image:hover {
+    filter: drop-shadow(0 0 30px var(--text-white));
+  }
+
+  .hero-plate {
+    transition: transform 9s ease-in-out;
+  }
   .hero-plate:hover {
-      transform: rotate(3turn);
-    }
-}
-
-
-/* @media (max-width: 479px) and
-(min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero .container {
-    background-image: url(../images/phone-left-balls@2x.png),
-      url(../images/phone-right-balls@2x.png);
+    transform: rotate(3turn);
   }
 }
-
-@media (min-width: 480px), (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    main
-  .hero .container {
-    background: url(../images/phone-left-balls@2x.png) 50% 100%/100px 34px no-repeat,
-      url(../images/phone-right-balls@2x.png) 105% 100%/130 48px no-repeat;
-  }
-}
-
-@media screen and (min-width: 768px),
-  (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-
-@media (min-width: 768px),
-(min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero .container {
-    background: url(../images/tablet-left-balls@2x.png) 0 100%/110px 34px no-repeat,
-      url(../images/tablet-right-balls@2x.png) 100% 100%/182 67px no-repeat;
-  }
-}
-
-@media screen and (min-width: 1200px),
-  (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero .container {
-    background: url(../images/desktop-balls@2x.png) bottom/1200px 384px no-repeat;
-  }
-}
-@media (min-width: 1200px) and
-(min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero .container {
-    background-image: url(../images/desktop-balls@2x.png);
-  }
-}  

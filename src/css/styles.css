@@ -52,7 +52,9 @@ button {
   padding: 0;
   margin: 0;
 }
-textarea{ resize: none;}
+textarea {
+  resize: none;
+}
 
 .btn {
   color: var(--text);
@@ -179,27 +181,28 @@ svg {
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) { 
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .gallery-customers-review-section {
     background-image: url(../images/background-mobile@2x.png);
+  }
 }
-}
-@media screen and (min-width: 768px), (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.gallery-customers-review-section {
+@media screen and (min-width: 768px),
+  (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .gallery-customers-review-section {
     background-image: url(../images/background-tablet@2x.png);
   }
 }
 
 @media screen and (min-width: 1200px),
-(min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .gallery-customers-review-section {
     background-image: url(../images/background-desktop@2x.png);
   }

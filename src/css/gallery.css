@@ -1,4 +1,3 @@
-
 .gallery-list {
   overflow: hidden;
 }
@@ -32,7 +31,7 @@
   10% {
     opacity: 1;
   }
-  
+
   33% {
     opacity: 1;
   }
@@ -45,16 +44,16 @@
 }
 
 @media screen and (min-width: 768px) {
-.gallery-item {
-  max-width: 704px;
-  top: -144px;
-  right: 32px;
-  left: 32px;
-  margin: 0 auto;
-}
-.gallery-item img {
-  border-radius: 18px;
-}
+  .gallery-item {
+    max-width: 704px;
+    top: -144px;
+    right: 32px;
+    left: 32px;
+    margin: 0 auto;
+  }
+  .gallery-item img {
+    border-radius: 18px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -65,7 +64,7 @@
     left: 94px;
     margin: 0 auto;
   }
-    .gallery-item img {
-      border-radius: 24px;
-    }
+  .gallery-item img {
+    border-radius: 24px;
+  }
 }

@@ -27,5 +27,3 @@
     // bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
-
-
