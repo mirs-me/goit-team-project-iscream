@@ -104,6 +104,8 @@
   background-color: var(--grey-disabled);
 }
 
+.subscribe-icon{pointer-events: none;}
+
 @media screen and (min-width: 768px) {
   .about-section .about-section-title {
     font-size: 22px;

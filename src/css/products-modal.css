@@ -22,10 +22,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: transform 500ms;
+  }
+  
+  .product-modal-close:hover {
+    transform: rotate(1turn);
+  }
 
 .product-modal-title {
   text-align: center;
