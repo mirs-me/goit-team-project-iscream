@@ -138,6 +138,7 @@ svg {
 
 .go-to-top-button {
   position: fixed;
+  display: none;
   inset: auto 5px 5px auto;
   z-index: 10;
   width: 75px;
