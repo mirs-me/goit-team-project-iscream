@@ -50,6 +50,11 @@
   justify-content: center;
   align-items: center;
   color: var(--text);
+  transition: background-color 0.25s ease-in-out;
+}
+.open-map:hover,
+.open-map:focus {
+  background-color: var(--button-green);
 }
 @media screen and (min-width: 768px) {
   .location-modal {
@@ -67,9 +72,9 @@
     height: 260px;
   }
   .location-container img {
-      width: 448px;
-      height: 260px;
-    }
+    width: 448px;
+    height: 260px;
+  }
   .open-map {
     margin-top: 32px;
     width: 145px;

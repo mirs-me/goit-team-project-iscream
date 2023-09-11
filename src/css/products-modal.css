@@ -202,9 +202,11 @@
   height: 84px;
   border: 1px solid var(--main-green);
   background: var(--form-yellow-underlay);
+  resize: none;
 }
 
-.product-modal-input-wrapper input:focus, .product-modal-input textarea:focus {
+.product-modal-input-wrapper input:focus,
+.product-modal-input textarea:focus {
   background-color: var(--card-yellow);
   outline: var(--black);
 }
@@ -224,6 +226,10 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 0;
+  transition: background-color 0.25s ease-in-out;
+}
+.product-modal-submit-button:hover {
+  background-color: var(--button-green);
 }
 
 @media screen and (min-width: 768px) {
@@ -278,18 +284,18 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .product-modal-image::after {
-      background-image: url('../images/icecream-modal-two@2x.png') 25%/25% no-repeat;
-    }
-  
-    .product-modal-image-coffee:after {
-      background-image: url('../images/ice-coffee-modal@2x.png') 25%/25% no-repeat;
-    }
-  
-    .product-modal-image-milkshakes:after {
-      background-image: url('../images/milkshake-modal@2x.png') 25%/25% no-repeat;
-    }
+    background-image: url('../images/icecream-modal-two@2x.png') 25%/25% no-repeat;
+  }
+
+  .product-modal-image-coffee:after {
+    background-image: url('../images/ice-coffee-modal@2x.png') 25%/25% no-repeat;
+  }
+
+  .product-modal-image-milkshakes:after {
+    background-image: url('../images/milkshake-modal@2x.png') 25%/25% no-repeat;
+  }
 }

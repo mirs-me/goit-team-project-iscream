@@ -125,7 +125,9 @@
   background-image: url(../images/milkshake-modal.png);
 }
 
-.buy-now-modal-product-title {pointer-events: none;}
+.buy-now-modal-product-title {
+  pointer-events: none;
+}
 
 .buy-now-modal form {
   display: flex;
@@ -212,6 +214,12 @@
   font-weight: 600;
   line-height: normal;
 }
+.buy-now-modal > .submit-button {
+  transition: background-color 0.25s var(--transition-general-function, easy-in-out);
+}
+.submit-button:hover {
+  background-color: var(--button-green);
+}
 
 .buy-now-modal .input-container input::placeholder,
 .buy-now-modal .input-container textarea::placeholder {
@@ -266,10 +274,10 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.buy-now-modal .item-green:after {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .buy-now-modal .item-green:after {
     background-image: url(../images/icecream-modal-one@2x.png) 25%/25%;
   }
 
@@ -280,5 +288,4 @@
   .buy-now-modal .item-brown:after {
     background-image: url(../images/milkshake-modal@2x.png) 25%/25%;
   }
-
 }
