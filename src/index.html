@@ -11,19 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <include src="./partials/header.html"></include>
     <main>
-      <include src="./partials/hero-section.html"></include>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/contacts-section.html"></include>
+      <div class="gallery-customers-review-section">
+        <include src="./partials/gallery.html"></include>
+        <include src="./partials/customers.html"></include>
+      </div>
+      <include src="./partials/contacts.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
-    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
+
+    <!-- Miejsce na modale -->
+
+    <include src="./partials/mobile-menu.html"></include>
+    <include src="./partials/buy-now-modal.html"></include>
+    <include src="./partials/products-modal.html"></include>
+    <include src="./partials/franchise-modal.html"></include>
+    <include src="./partials/our-location-modal.html"></include>
     <script src="./index.js" type="module"></script>
   </body>
 </html>

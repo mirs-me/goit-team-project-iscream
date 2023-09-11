@@ -4,9 +4,10 @@
   --card-green: #aec6a5;
   --ingredients-green: #9cbe8f;
   --button-green: #0a8817;
-  --grey-dissabled: #ababab;
+  --grey-disabled: #ababab;
   --yellow: #f8d24e;
   --card-yellow: #efd478;
+  --form-yellow-underlay: #f8d24e1a;
   --brown: #d6936d;
   --brown-underlay: #d5753fb2; /*70% transparency - product circle*/
   --green-underlay: #9cbe8fb2; /*70% transparency - product circle*/
@@ -16,6 +17,9 @@
   --white: #fff;
   --black: #000;
   --box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  --transition-general-duration: 250ms;
+  --transition-general-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-general: var(--transition-general-duration) var(--transition-general-function);
 }
 
 body {
@@ -56,7 +60,7 @@ button {
   outline: none;
   font-size: 14px;
   font-weight: 600;
-  /* display: block; niepotrzebne */ 
+  /* display: block; niepotrzebne */
 }
 
 ul,
@@ -68,6 +72,11 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+svg {
+  display: block;
+  fill: currentColor;
 }
 
 .container {
@@ -90,15 +99,58 @@ a {
   width: 1px;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 2000;
+  background-color: rgba(10, 10, 10, 0.5);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.gallery-customers-review-section {
+  position: relative;
+  background-color: var(--text-white);
+  width: 100%;
+  height: 1110px;
+  background-image: url(../images/background-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 175px;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px;
   }
+  .gallery-customers-review-section {
+    position: relative;
+    height: 1017px;
+    padding-top: 223px;
+  }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
     padding: 0 16px;
+  }
+  .gallery-customers-review-section {
+    position: relative;
+    height: 1053px;
+    padding-top: 404px;
   }
 }

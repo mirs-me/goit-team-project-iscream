@@ -1,4 +1,6 @@
 import './css/main.css';
-import './icons/icons.svg';
-import './images/desktop-logo@1x.png';
-import './images/desktop-logo@2x.png';
+import './js/mobile-menu.js';
+import './js/modal.js';
+import './js/customers.js';
+import './js/products.js'
+

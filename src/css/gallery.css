@@ -1,0 +1,71 @@
+
+.gallery-list {
+  overflow: hidden;
+}
+.gallery-item {
+  max-width: 440px;
+  animation-name: gallery;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: -49px;
+  right: 20px;
+  left: 20px;
+  margin: 0 auto;
+}
+
+.gallery-item:nth-of-type(1) {
+  animation-delay: 6s;
+}
+.gallery-item:nth-of-type(2) {
+  animation-delay: 3s;
+}
+.gallery-item img {
+  border-radius: 10px;
+}
+
+@keyframes gallery {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  
+  33% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.gallery-item {
+  max-width: 704px;
+  top: -144px;
+  right: 32px;
+  left: 32px;
+  margin: 0 auto;
+}
+.gallery-item img {
+  border-radius: 18px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-item {
+    max-width: 1013px;
+    top: -98px;
+    right: 93px;
+    left: 94px;
+    margin: 0 auto;
+  }
+    .gallery-item img {
+      border-radius: 24px;
+    }
+}

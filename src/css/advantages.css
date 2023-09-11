@@ -1,5 +1,6 @@
 
 .advantages-values {
+
     color: var(--text-white);
     text-Align: center;
     font-Family:'Montserrat';
@@ -20,6 +21,8 @@
     font-Weight: 400;
     line-Height: 170%; /* 20.4px */
     letter-Spacing: 0.32px;
+    margin-bottom: 21px;
+
     }
     @media screen and (min-width: 768px) {
         .advantages-paragraph {
@@ -27,6 +30,8 @@
          flex-Shrink: 0;
          font-Size: 14px;           
          line-Height: 174%; /* 24.36px */
+         margin-bottom: 144px;
+
         }
     }
     @media screen and (min-width: 1200px) {
