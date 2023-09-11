@@ -87,6 +87,7 @@
       url(../images/phone-right-balls@1x.png) 200px 100%/130 48px no-repeat;
     position: relative;
   }
+  .hero-ic-image { width: 177px;}
 }
 @media screen and (min-width: 480px) {
   .hero .container {
@@ -100,6 +101,7 @@
     right: 0;
     min-width: 218px;
   }
+  .hero-ic-image{ width: 218px;}
 }
 
 @media screen and (min-width: 768px) {
@@ -113,6 +115,7 @@
     padding-bottom: 12px;
     position: relative;
   }
+  .hero-ic-image { width: 268px;}
   .hero-description {
     display: flex;
     margin-top: 12px;
@@ -197,6 +200,9 @@
     padding-top: 118px;
     padding-bottom: 65px;
   }
+
+  .hero-ic-image{ width: 447px;}
+
   .btn-border {
     padding: 12px 34px;
   }
