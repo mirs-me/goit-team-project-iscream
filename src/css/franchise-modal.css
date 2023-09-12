@@ -8,8 +8,16 @@
   border-radius: 10px;
   border: 2px solid #f8d24e;
   padding: 28px;
+  transition: scale var(--transition-general), opacity var(--transition-general);
 }
-
+.is-hidden .franchise-modal-wrapper {
+  scale: 0;
+  opacity: 0;
+}
+.backdrop:not(.is-hidden) .franchise-modal-wrapper {
+  scale: 1;
+  opacity: 1;
+}
 .franchise-modal-close {
   position: absolute;
   width: 20px;
@@ -146,12 +154,11 @@
     width: 121px;
     font-size: 14px;
     text-align: center;
+    transition-property: background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: var(--transition-general-function), ease-in-out;
   }
-}
-@media screen and (min-width: 1200) {
-  .franchise-modal-submit-button {
-    transition: background-color 0.25s ease-in-out;
-  }
+
   .franchise-modal-submit-button:hover,
   .franchise-modal-submit-button:focus {
     background-color: var(--button-green);

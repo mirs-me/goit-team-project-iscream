@@ -8,8 +8,16 @@
   border-radius: 10px;
   border: 2px solid #f8d24e;
   padding: 28px 20px;
+  transition: scale var(--transition-general), opacity var(--transition-general);
 }
-
+.is-hidden .product-modal-wrapper {
+  scale: 0;
+  opacity: 0;
+}
+.backdrop:not(.is-hidden) .product-modal-wrapper {
+  scale: 1;
+  opacity: 1;
+}
 .product-modal-close {
   position: absolute;
   width: 20px;
@@ -23,12 +31,11 @@
   justify-content: center;
   align-items: center;
   transition: transform 500ms;
-  }
-  
-  .product-modal-close:hover {
-    transform: rotate(1turn);
-  }
+}
 
+.product-modal-close:hover {
+  transform: rotate(1turn);
+}
 
 .product-modal-title {
   text-align: center;
@@ -269,6 +276,11 @@
   .product-modal-submit-button {
     margin-top: 16px;
     width: 121px;
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  .product-modal-submit-button:hover {
+    background-color: var(--button-green);
   }
 }
 
@@ -280,14 +292,6 @@
 .product-modal-input-wrapper input:not(:placeholder-shown):required:invalid,
 .product-modal-input-wrapper textarea:not(:placeholder-shown):required:invalid {
   border: 2px solid red;
-}
-@media screen and (min-width: 1200) {
-  .product-modal-submit-button {
-    transition: background-color 0.25s ease-in-out;
-  }
-  .product-modal-submit-button:hover {
-    background-color: var(--button-green);
-  }
 }
 
 @media (min-device-pixel-ratio: 2),

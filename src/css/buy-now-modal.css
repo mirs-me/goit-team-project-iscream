@@ -1,23 +1,3 @@
-:root {
-  --text: #131313;
-  --main-green: #84a178;
-  --card-green: #aec6a5;
-  --ingredients-green: #9cbe8f;
-  --button-green: #0a8817;
-  --grey-dissabled: #ababab;
-  --yellow: #f8d24e;
-  --card-yellow: #efd478;
-  --brown: #d6936d;
-  --brown-underlay: #d5753fb2; /*70% transparency - product circle*/
-  --green-underlay: #9cbe8fb2; /*70% transparency - product circle*/
-  --yellow-underlay: #f8d24eb2; /*70% transparency - product circle*/
-  --text-white: #fcfcfc;
-  --stroke: #e1e1e1;
-  --white: #fff;
-  --black: #000;
-  --box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
-}
-
 .buy-now-modal {
   width: 280px;
   background-color: #fcfcfc;
@@ -26,6 +6,15 @@
   padding: 28px;
   border-radius: 10px;
   position: relative;
+  transition: scale var(--transition-general), opacity var(--transition-general);
+}
+.is-hidden .buy-now-modal {
+  scale: 0;
+  opacity: 0;
+}
+.backdrop:not(.is-hidden) .buy-now-modal {
+  scale: 1;
+  opacity: 1;
 }
 .buy-now-modal .close-modal-btn {
   background-color: transparent;
@@ -203,7 +192,7 @@
   height: 65px;
   margin-bottom: 14px;
 }
-.buy-now-modal .submit-button {
+.buy-now-submit-button {
   padding: 12px 34px;
   border-radius: 10px;
   background: #f8d24e;
@@ -260,20 +249,20 @@
     margin-bottom: 16px;
   }
 
-  .buy-now-modal .submit-button {
+  .buy-now-submit-button {
     padding: 12px 34px;
     font-size: 18px;
   }
-}
-@media screen and (min-width: 1200) {
-  .buy-now-modal > .submit-button {
-    transition: background-color 0.25s var(--transition-general-function, easy-in-out);
+
+  .buy-now-submit-button {
+    transition-property: background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: var(--transition-general-function), ease-in-out;
   }
-  .submit-button:hover {
+  .buy-now-submit-button:hover {
     background-color: var(--button-green);
   }
 }
-
 @media screen and (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),

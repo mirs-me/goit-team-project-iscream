@@ -1,37 +1,68 @@
-<div class="backdrop is-hidden" data-modal="franchise"> 
-    <div class="franchise-modal-wrapper">
-        <button class="franchise-modal-close" data-modal-close>
-            <svg width="20" height="20">
-                <use href="./icons/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-        <h2 class="franchise-modal-title">Thank you for your interest in owning an Ice Cream shop</h2>
-        <p class="franchise-modal-description">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once
-        the application process resumes, we will contact you for further information. Please fill out the contact information
-        below and we will reach out for additional information. We appreciate your patience.</p>
-        <div>
-            <form name="franchise-modal-form" class="franchise-modal-order-form">
-                <label for="clientname" class="visually-hidden">Name</label>
-                <div class="franchise-modal-input-wrapper">
-                    <input class="franchise-modal-input" type="text" minlength="2" name="clientname" id="clientname" placeholder="Name"
-                    required />
-                </div>
-                <label for="phonenumber" class="visually-hidden">Phone</label>
-                <div class="franchise-modal-input-wrapper">
-                    <input class="franchise-modal-input" type="tel" pattern="[0-9]{9}" name="phonenumber" id="phonenumber" placeholder="Phone"
-                    required />
-                </div>
-                <label for="email" class="visually-hidden">Email</label>
-                <div class="franchise-modal-input-wrapper">
-                    <input class="franchise-modal-input" type="email" name="email" id="email" placeholder="Email" required />
-                </div>
-                <label for="clientcomment" class="visually-hidden">Comment</label>
-                <div class="franchise-modal-input-wrapper">
-                    <textarea class="franchise-modal-input" name="clientcomment" id="clientcomment" placeholder="Comment" cols="30" rows="5"
-                    wrap="hard"></textarea>
-                </div>
-                <button class="franchise-modal-submit-button" type="submit">Submit</button>
-            </form>    
+<div class="backdrop is-hidden" data-modal="franchise" data-modal-backdrop>
+  <div class="franchise-modal-wrapper">
+    <button class="franchise-modal-close" data-modal-close>
+      <svg width="20" height="20">
+        <use href="./icons/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="franchise-modal-title">Thank you for your interest in owning an Ice Cream shop</h2>
+    <p class="franchise-modal-description">
+      Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+      applications at this time. Once the application process resumes, we will contact you for
+      further information. Please fill out the contact information below and we will reach out for
+      additional information. We appreciate your patience.
+    </p>
+    <div>
+      <form name="franchise-modal-form" class="franchise-modal-order-form">
+        <label for="clientname-franchise" class="visually-hidden">Name</label>
+        <div class="franchise-modal-input-wrapper">
+          <input
+            class="franchise-modal-input"
+            type="text"
+            minlength="2"
+            name="clientname"
+            id="clientname-franchise"
+            placeholder="Name"
+            required
+          />
         </div>
+        <div class="franchise-modal-input-wrapper">
+          <label for="phonenumber-franchise" class="visually-hidden">Phone</label>
+          <input
+            class="franchise-modal-input"
+            type="tel"
+            pattern="[0-9]{9}"
+            name="phonenumber"
+            id="phonenumber-franchise"
+            placeholder="Phone"
+            required
+          />
+        </div>
+        <div class="franchise-modal-input-wrapper">
+          <label for="email-franchise" class="visually-hidden">Email</label>
+          <input
+            class="franchise-modal-input"
+            type="email"
+            name="email"
+            id="email-franchise"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="franchise-modal-input-wrapper">
+          <label for="clientcomment-franchise" class="visually-hidden">Comment</label>
+          <textarea
+            class="franchise-modal-input"
+            name="clientcomment"
+            id="clientcomment-franchise"
+            placeholder="Comment"
+            cols="30"
+            rows="5"
+            wrap="hard"
+          ></textarea>
+        </div>
+        <button class="franchise-modal-submit-button" type="submit">Submit</button>
+      </form>
     </div>
+  </div>
 </div>
